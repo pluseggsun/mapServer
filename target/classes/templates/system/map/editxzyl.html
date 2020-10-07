@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+<meta charset="utf-8">
+<head th:include="include :: header_with_param(~{::link})">
+    <link rel="stylesheet" th:href="@{/css/plugins/openlayers/ol.css}" type="text/css">
+ 	<link href="/css/fileup/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
+ 
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content ">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                	<form class="form-horizontal m-t" id="signupForm" enctype="multipart/form-data">
+                        <input id="addressno" name="addressno" th:value="${dict.addressno}" class="form-control" type="hidden" >
+                        <input id="registernoimage" name="registernoimage" th:value="${dict.registernoimage}" class="form-control" type="hidden" >
+                        
+				        <div class="form-group">
+                            <label class="col-sm-3 control-label"></label>
+                            <div class="col-sm-4">
+					            <div class="file-loading">
+					                <input id="file" name="file" class="file" type="file" multiple>
+					            </div>
+				            </div>
+				        </div>
+				        
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">写真解像度（原）：</label>
+                            <div class="col-sm-3" style="width: 160px">
+                                <input id="imageresoold" name="imageresoold" readonly th:value="${dict.imageresoold}" tabindex="501" class="form-control" type="text" >
+                            </div>
+                            
+                            <label class="col-sm-2 control-label">写真解像度（新）：</label>
+                            <div class="col-sm-3" style="width: 160px">
+                                <input id="imageresonew" name="imageresonew" readonly th:value="${dict.imageresonew}" tabindex="502" class="form-control" type="text" >
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">写真年代：</label>
+                            <div class="col-sm-3" style="width: 160px">
+								<select data-placeholder="選択" id ="imageyears" name="imageyears" class="form-control chosen-select" tabindex="503" style="width: 100%">
+		                        </select>
+                            </div>
+                            
+                            <label class="col-sm-2 control-label">写真状態：</label>
+                            <div class="col-sm-3" style="width: 160px">
+			                        <select data-placeholder="選択" id ="imagestate" name="imagestate" class="form-control chosen-select" tabindex="504" style="width: 100%">
+			                        </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">写真説明：</label>
+                            <div class="col-sm-8">
+                                <textarea id="imagecontent" name="imagecontent" th:text="${dict.imagecontent}" rows="5" class="form-control" tabindex="505" 
+                                data-bv-stringlength="true" 
+                                data-bv-stringlength-max="2000" data-bv-stringlength-message="２０００文字以下で入力してください。" ></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">住所名称：</label>
+                            <div class="col-sm-3" style="width: 320px">
+                                <input id="addressname" name="addressname" th:value="${dict.addressname}"  class="form-control" tabindex="506" 
+                                data-bv-stringlength="true"
+                                data-bv-stringlength-max="20" data-bv-stringlength-message="２０文字以下で入力してください。" type="text">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+							<label class="col-sm-3 control-label">住所： </label>
+	                        <div class="col-sm-2" style="width: 160px">
+								<select data-placeholder="選択" id ="address1" name="address1" class="form-control chosen-select" tabindex="507" style="width: 100%">
+		                        </select>
+	                        </div>
+	                        <div class="col-sm-2" style="width: 160px">
+								<select data-placeholder="選択" id ="address2" name="address2" class="form-control chosen-select" tabindex="508" style="width: 100%">
+		                        </select>
+	                        </div>
+	                        <div class="col-sm-1" style="width: 80px">
+	                            <input id="address3" name="address3" th:value="${dict.address3}" class="form-control" tabindex="509" 
+	                            data-bv-integer="true" data-bv-integer-message="５数字以下で入力してください。" 
+                                data-bv-stringlength="true"
+                                data-bv-stringlength-max="5" data-bv-stringlength-message="５数字以下で入力してください。" type="text">
+	                        </div>
+	                        <div class="col-sm-1" style="width: 30px;padding: 0;">
+	                        	<label class="control-label">丁目 </label>
+	                        </div>
+	                        
+	                        <div class="col-sm-1" style="width: 80px">
+	                            <input id="address4" name="address4" th:value="${dict.address4}" class="form-control" tabindex="510" 
+	                            data-bv-integer="true" data-bv-integer-message="５数字以下で入力してください。" 
+                                data-bv-stringlength="true"
+                                data-bv-stringlength-max="5" data-bv-stringlength-message="５数字以下で入力してください。" type="text">
+	                        </div>
+							<div class="col-sm-1" style="width: 30px;padding: 0;">
+	                        	<label class="control-label">番 </label>
+	                        </div>
+	                        
+	                        <div class="col-sm-1" style="width: 80px">
+	                            <input id="address5" name="address5" th:value="${dict.address5}" class="form-control" tabindex="511" 
+	                            data-bv-integer="true" data-bv-integer-message="５数字以下で入力してください。" 
+                                data-bv-stringlength="true"
+                                data-bv-stringlength-max="5" data-bv-stringlength-message="５数字以下で入力してください。"  type="text">
+	                        </div>
+	                        <div class="col-sm-1" style="width: 30px;padding: 0;">
+	                        	<label class="control-label">号 </label>
+	                        </div>
+                        </div>
+                        
+<!--                         <div class="form-group"> -->
+<!--                             <label class="col-sm-3 control-label">郵便番号：</label> -->
+<!--                             <div class="col-sm-3" style="width: 160px"> -->
+<!--                                 <input id="postmail" name="postmail" th:value="${dict.postmail}" class="form-control" type="text"  -->
+<!--                                 data-bv-stringlength="true" -->
+<!--                                 data-bv-stringlength-min="7" -->
+<!--                                 data-bv-stringlength-max="7" data-bv-stringlength-message="７数字以下で入力してください。"> -->
+<!--                             </div> -->
+<!--                         </div> -->
+                        
+<!--                         <div class="form-group"> -->
+<!--                             <label class="col-sm-3 control-label">住所説明：</label> -->
+<!--                             <div class="col-sm-8"> -->
+<!--                                 <textarea id="addresscontent" name="addresscontent" th:text="${dict.addresscontent}" rows="5" class="form-control" required></textarea> -->
+<!--                             </div> -->
+<!--                         </div> -->
+                        
+<!--                         <div class="form-group"> -->
+<!--                             <label class="col-sm-3 control-label">GoogleMap座標X：</label> -->
+<!--                             <div class="col-sm-3" style="width: 160px"> -->
+<!--                                 <input id="googlemapmarkx" name="googlemapmarkx" th:value="${dict.googlemapmarkx}"  class="form-control" type="text" required> -->
+<!--                             </div> -->
+                            
+<!--                             <label class="col-sm-2 control-label">GoogleMap座標Y：</label> -->
+<!--                             <div class="col-sm-3" style="width: 160px"> -->
+<!--                                 <input id="googlemapmarky" name="googlemapmarky" th:value="${dict.googlemapmarky}" class="form-control" type="text" required> -->
+<!--                             </div> -->
+<!--                         </div> -->
+                        
+                        <div class="form-group">
+                            <div class="col-sm-8">
+                                <button type="submit" tabindex="512" class="btn btn-primary">確定</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:include="include::footer"></div>
+
+<script src="/js/fileup/fileinput.js" type="text/javascript"></script>
+<script src="/js/fileup/locales/ja.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+var image = '[[${image}]]';
+
+var address1 = '[[${dict.address1}]]';
+var address2 = '[[${dict.address2}]]';
+var imageyears = '[[${dict.imageyears}]]';
+var imagestate = '[[${dict.imagestate}]]';
+
+/*]]>*/
+$("#file").fileinput('destroy');
+$("#file").fileinput({
+    'language': 'ja',//设置语言
+    'showPreview': true,
+    'showUpload':false,
+    'showRemove': false,
+    'showBrowse': false,
+    'allowedFileExtensions': ['jpg', 'png', 'gif'],
+    'overwriteInitial': false,
+    'initialPreviewAsData': true,
+    'initialPreviewShowDelete': false,
+  	'initialPreview': [
+  		"/upload/images/" + image
+     ]
+});
+
+$(function () {
+	getcityinfo();
+	getimagecode();
+	getstatuscode();
+	$('#signupForm').bootstrapValidator().on('success.form.bv', function (e) { e.preventDefault(); });
+});
+
+function getcityinfo(){
+	$.ajax({
+		url : '/base/getcityinfo',
+		success : function(data) {
+		 	var ctiy =  "";
+			for(var i = 0; i < 1; i++){
+				if(address1 == data[i].city_id){
+					ctiy += "<option selected value='"+data[i].city_id+"'>"+data[i].city_name+"</option>";
+				} else {
+					ctiy += "<option value='"+data[i].city_id+"'>"+data[i].city_name+"</option>";
+				}
+			}
+			$("#address1").append(ctiy);
+
+// 		 	var town =  "";
+		 	var town =  "<option value=''>未選択</option>";
+			for(var i = 0; i < data.length; i++){
+				if(address2 == data[i].town_id){
+					town += "<option selected value='"+data[i].town_id+"'>"+data[i].town_name+"</option>";
+				} else {
+					town += "<option value='"+data[i].town_id+"'>"+data[i].town_name+"</option>";
+				}
+			}
+			$("#address2").append(town);
+		}
+	});
+}
+
+function getimagecode(){
+	$.ajax({
+		url : '/base/getimagecode',
+		success : function(data) {
+// 		 	var html =  "";
+		 	var html =  "<option value=''>未選択</option>";
+			for(var i = 0; i < data.length; i++){
+				if(imageyears == data[i].IMAGEYEARSCD){
+					html += "<option selected value='"+data[i].IMAGEYEARSCD+"'>"+data[i].IMAGEYEARSNAME+"</option>";
+				} else {
+					html += "<option value='"+data[i].IMAGEYEARSCD+"'>"+data[i].IMAGEYEARSNAME+"</option>";
+				}
+			}
+			$("#imageyears").append(html);
+		}
+	});
+}
+
+function getstatuscode(){
+	$.ajax({
+		url : '/base/getstatuscode',
+		success : function(data) {
+		 	var html = "";
+			for(var i = 0; i < data.length; i++){
+				if(imagestate == data[i].IMAGESTATECD){
+					html += "<option selected value='"+data[i].IMAGESTATECD+"'>"+data[i].IMAGESTATENAME+"</option>";
+				} else {
+					html += "<option value='"+data[i].IMAGESTATECD+"'>"+data[i].IMAGESTATENAME+"</option>";
+				}
+			}
+			$("#imagestate").append(html);
+		}
+	});
+}
+
+</script>
+<script type="text/javascript" src="/js/appjs/system/map/editxzyl.js"></script>
+</body>
+</html>

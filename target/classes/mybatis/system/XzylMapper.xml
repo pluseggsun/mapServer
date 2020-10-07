@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bootdo.system.dao.XzylDao">
+
+	<select id="get" resultType="com.bootdo.system.domain.CoordinatesDO">
+		select
+			id,
+			xcoordinates,
+			ycoordinates,
+			localone,
+			localtwo,
+			address,
+			tohtml,
+			image,
+			addressremark,
+			photooldname,
+			photonewname,
+			photooldsize,
+			photonewsize,
+			telnumber,
+			photoyears,
+			photoremark,
+			creatdate,
+			status
+		from coordinates where id = #{value}
+	</select>
+
+	<select id="list" resultType="com.bootdo.system.domain.CoordinatesDO">
+		select
+			id,
+			xcoordinates,
+			ycoordinates,
+			localone,
+			localtwo,
+			address,
+			tohtml,
+			image,
+			addressremark,
+			photooldname,
+			photonewname,
+			photooldsize,
+			photonewsize,
+			telnumber,
+			photoyears,
+			photoremark,
+			creatdate,
+			status
+		from coordinates
+		<where>
+			<if test="xcoordinates != null and xcoordinates != ''"> and xcoordinates = #{xcoordinates} </if>
+			<if test="ycoordinates != null and ycoordinates != ''">and ycoordinates = #{ycoordinates} </if>
+			<if test="localone != null and localone != ''">and localone = #{localone} </if>
+			<if test="localtwo != null and localtwo != ''">and localtwo = #{localtwo} </if>
+			<if test="address != null and address != ''">and address LIKE concat('%',#{address},'%') </if>
+			<if test="tohtml != null and tohtml != ''">and tohtml = #{tohtml} </if>
+			<if test="image != null and image != ''">and image LIKE concat('%',#{image},'%') </if>
+			<if test="addressremark != null and addressremark != ''">and addressremark = #{addressremark} </if>
+			<if test="photooldname != null and photooldname != ''">and photooldname LIKE concat('%',#{photooldname},'%') </if>
+			<if test="photonewname != null and photonewname != ''">and photonewname LIKE concat('%',#{photonewname},'%') </if>
+			<if test="photooldsize != null and photooldsize != ''">and photooldsize = #{photooldsize} </if>
+			<if test="photonewsize != null and photonewsize != ''">and photonewsize = #{photonewsize} </if>
+			<if test="telnumber != null and telnumber != ''">and telnumber LIKE concat('%',#{telnumber},'%') </if>
+			<if test="photoyears != null and photoyears != ''">and photoyears = #{photoyears} </if>
+			<if test="photoremark != null and photoremark != ''">and photoremark = #{photoremark} </if>
+			<if test="status != null and status.length > 0">
+                and status in
+                <foreach collection="status" item="item"  open="(" close=")" separator=",">
+                    #{item}
+                </foreach>
+            </if>
+		</where>
+		<choose>
+			<when test="sortby != null and sortby.trim() != ''">
+				order by ${sortby} ${order}
+			</when>
+			<otherwise>
+				order by id asc
+			</otherwise>
+		</choose>
+		<if test="offset != null and limit != null">
+			limit #{limit} offset #{offset} 
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		select count(*) from coordinates
+		<where>
+			<if test="xcoordinates != null and xcoordinates != ''"> and xcoordinates = #{xcoordinates} </if>
+			<if test="ycoordinates != null and ycoordinates != ''">and ycoordinates = #{ycoordinates} </if>
+			<if test="localone != null and localone != ''">and localone = #{localone} </if>
+			<if test="localtwo != null and localtwo != ''">and localtwo = #{localtwo} </if>
+			<if test="address != null and address != ''">and address LIKE concat('%',#{address},'%') </if>
+			<if test="tohtml != null and tohtml != ''">and tohtml = #{tohtml} </if>
+			<if test="image != null and image != ''">and image LIKE concat('%',#{image},'%') </if>
+			<if test="addressremark != null and addressremark != ''">and addressremark = #{addressremark} </if>
+			<if test="photooldname != null and photooldname != ''">and photooldname LIKE concat('%',#{photooldname},'%') </if>
+			<if test="photonewname != null and photonewname != ''">and photonewname LIKE concat('%',#{photonewname},'%') </if>
+			<if test="photooldsize != null and photooldsize != ''">and photooldsize = #{photooldsize} </if>
+			<if test="photonewsize != null and photonewsize != ''">and photonewsize = #{photonewsize} </if>
+			<if test="telnumber != null and telnumber != ''">and telnumber LIKE concat('%',#{telnumber},'%') </if>
+			<if test="photoyears != null and photoyears != ''">and photoyears = #{photoyears} </if>
+			<if test="photoremark != null and photoremark != ''">and photoremark = #{photoremark} </if>
+			 <if test="status != null and status.length > 0">
+                and status in
+                <foreach collection="status" item="item"  open="(" close=")" separator=",">
+                    #{item}
+                </foreach>
+            </if>
+			
+		</where>
+	</select>
+
+	<insert id="save" parameterType="com.bootdo.system.domain.CoordinatesDO"
+		useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO coordinates (
+			xcoordinates,
+			ycoordinates,
+			localone,
+			localtwo,
+			address,
+			tohtml,
+			image,
+			addressremark,
+			photooldname,
+			photonewname,
+			photooldsize,
+			photonewsize,
+			telnumber,
+			photoyears,
+			photoremark,
+			creatdate,
+			status 
+		)
+		VALUES
+		(
+		#{xcoordinates},
+		#{ycoordinates},
+		#{localone},
+		#{localtwo},
+		#{address},
+		#{tohtml},
+		#{image},
+		#{addressremark},
+		#{photooldname},
+		#{photonewname},
+		#{photooldsize},
+		#{photonewsize},
+		#{telnumber},
+		#{photoyears},
+		#{photoremark},
+		now(),
+		#{status}
+		)
+	</insert>
+
+	<update id="update" parameterType="com.bootdo.system.domain.CoordinatesDO">
+		update coordinates
+		<set>
+			<if test="xcoordinates != null">xcoordinates = #{xcoordinates}, </if>
+			<if test="ycoordinates != null">ycoordinates = #{ycoordinates}, </if>
+			<if test="localone != null">localone = #{localone}, </if>
+			<if test="localtwo != null">localtwo = #{localtwo}, </if>
+			<if test="address != null">address = #{address}, </if>
+			<if test="tohtml != null">tohtml = #{tohtml}, </if>
+			<if test="image != null">image = #{image}, </if>
+			<if test="addressremark != null">addressremark = #{addressremark}, </if>
+			<if test="photooldname != null">photooldname = #{photooldname}, </if>
+			<if test="photonewname != null">photonewname = #{photonewname}, </if>
+			<if test="photooldsize != null">photooldsize = #{photooldsize}, </if>
+			<if test="photonewsize != null">photonewsize = #{photonewsize},</if>
+			<if test="telnumber != null">telnumber = #{telnumber},</if>
+			<if test="photoyears != null">photoyears = #{photoyears},</if>
+			<if test="photoremark != null">photoremark = #{photoremark},</if>
+			<if test="status != null">status = #{status},</if>
+			<if test="updatedate != null">updatedate = now() </if>
+			
+		</set>
+		where id = #{id}
+	</update>
+
+	<delete id="remove">
+		delete from coordinates where id = #{value}
+	</delete>
+
+</mapper>

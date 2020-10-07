@@ -1,0 +1,72 @@
+.pretty-split-pane-frame {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 2px;
+	background: #374150;
+	font-size:8px;
+}
+
+.pretty-split-pane-frame .split-pane > .split-pane-divider.dragged.touch {
+	background: blue;
+	opacity: 0.25;
+}
+
+.pretty-split-pane-component-inner {
+	box-sizing: border-box;
+	border: 1px solid #2F4050;
+	background: white;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	overflow: auto;
+	position:relative;
+}
+
+#left-div{
+	width:260px;
+}
+
+#left-divider {
+	left:260px;
+	width: 1px;
+}
+
+#right-div{
+	left:260px;
+	margin-left:1px;
+}
+
+#r-left-div{
+	right:300px;
+	margin-right:1px;
+}
+
+#r-left-divider {
+	right:300px;
+	width: 1px;
+}
+
+#r-right-div{
+	width:300px;
+}
+
+#top-div{
+	height: 387px;
+}
+#top-divider {
+	top: 387px;
+	height: 1px;
+}
+#bottom-div {
+	top: 387px;
+	margin-top:1px;
+}
+
+.map-content-header{
+	border-bottom:1px solid #3b4e50;
+	background-color: #2F4050;
+	text-align: center;
+	color:#fff;
+}
+

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bootdo.system.dao.ImageDao">
+
+	<select id="get" resultType="com.bootdo.system.domain.ImageAddressDO">
+		select
+			IMAGENO,
+			IMAGERESOOLD,
+			IMAGERESONEW,
+			IMAGE,
+			IMAGEYEARS,
+			IMAGECONTENT,
+			IMAGESTATE,
+			REC_INS_TS recInsTs,
+			REC_UPD_TS recUpdTs
+
+		from TB_PHOTOINFO where IMAGENO = #{value}
+	</select>
+
+	<select id="list" resultType="com.bootdo.system.domain.ImageAddressDO">
+		select
+			IMAGENO,
+			IMAGERESOOLD,
+			IMAGERESONEW,
+			IMAGE,
+			IMAGEYEARS,
+			IMAGECONTENT,
+			IMAGESTATE,
+			REC_INS_TS recInsTs,
+			REC_UPD_TS recUpdTs
+		from TB_PHOTOINFO
+		<where>
+			<if test="imageno != null and imageno != ''">and IMAGENO = #{imageno} </if>
+			<if test="imageresoold != null and imageresoold != ''">and IMAGERESOOLD = #{imageresoold} </if>
+			<if test="imageresonew != null and imageresonew != ''">and IMAGERESONEW = #{imageresonew} </if>
+			<if test="image != null and image != ''">and IMAGE = #{image} </if>
+			<if test="imageyears != null and imageyears != ''">and IMAGEYEARS = #{imageyears} </if>
+			<if test="imagecontent != null and imagecontent != ''">and IMAGECONTENT = #{imagecontent} </if>
+			<if test="imagestate != null and imagestate != ''">and IMAGESTATE = #{imagestate} </if>
+			<if test="mapid != null and mapid != ''">and ADDRESSNO = #{mapid} </if>
+		</where>
+		<choose>
+			<when test="sortby != null and sortby.trim() != ''">
+				order by ${sortby} ${order}
+			</when>
+			<otherwise>
+				order by IMAGENO asc
+			</otherwise>
+		</choose>
+		<if test="offset != null and limit != null">
+			limit #{limit} offset #{offset} 
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		select count(*) from TB_PHOTOINFO
+		<where>
+			<if test="imageno != null and imageno != ''">and IMAGENO = #{imageno} </if>
+			<if test="imageresoold != null and imageresoold != ''">and IMAGERESOOLD = #{imageresoold} </if>
+			<if test="imageresonew != null and imageresonew != ''">and IMAGERESONEW = #{imageresonew} </if>
+			<if test="image != null and image != ''">and IMAGE = #{image} </if>
+			<if test="imageyears != null and imageyears != ''">and IMAGEYEARS = #{imageyears} </if>
+			<if test="imagecontent != null and imagecontent != ''">and IMAGECONTENT = #{imagecontent} </if>
+			<if test="imagestate != null and imagestate != ''">and IMAGESTATE = #{imagestate} </if>
+		</where>
+	</select>
+
+	<insert id="save" parameterType="com.bootdo.system.domain.ImageAddressDO"
+		useGeneratedKeys="true" keyProperty="imageno">
+		INSERT INTO TB_PHOTOINFO (
+			ADDRESSNO,
+			IMAGERESOOLD,
+			IMAGERESONEW,
+			IMAGE,
+			IMAGEYEARS,
+			IMAGECONTENT,
+			IMAGESTATE,
+			REC_INS_TS,
+			REC_UPD_TS
+		)
+		VALUES
+		(
+		#{mapid},
+		#{imageresoold},
+		#{imageresonew},
+		#{image},
+		#{imageyears},
+		#{imagecontent},
+		#{imagestate},
+		now(),
+		now()
+		)
+	</insert>
+
+	<update id="update" parameterType="com.bootdo.system.domain.ImageAddressDO">
+		update TB_PHOTOINFO
+		<set>
+			<if test="imageresoold != null">IMAGERESOOLD = #{imageresoold}, </if>
+			<if test="imageresonew != null">IMAGERESONEW = #{imageresonew}, </if>
+			<if test="image != null">IMAGE = #{image}, </if>
+			<if test="imageyears != null">IMAGEYEARS = #{imageyears}, </if>
+			<if test="imagecontent != null">IMAGECONTENT = #{imagecontent}, </if>
+			<if test="imagestate != null">IMAGESTATE = #{imagestate}, </if>
+			<if test="mapid != null">ADDRESSNO = #{mapid}, </if>
+			REC_UPD_TS = now()
+		</set>
+<!-- 		where IMAGENO = #{imageno} -->
+		where IMAGENO = #{registernoimage}
+	</update>
+
+	<delete id="remove">
+		delete from TB_PHOTOINFO where IMAGENO = #{value}
+	</delete>
+	
+<!-- 	<delete id="removeUpd"> -->
+<!-- 		update TB_PHOTOINFO set DEL_FLG = 1 where IMAGENO = #{value} -->
+<!-- 	</delete> -->
+
+</mapper>

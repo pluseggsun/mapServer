@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bootdo.system.dao.BaseInfoDao">
+
+	<select id="getImageCode" resultType="java.util.HashMap">
+		select
+			IMAGEYEARSCD,
+			IMAGEYEARSNAME,
+			REC_INS_TS,
+			REC_UPD_TS
+		from TB_PHOTOYEAR 
+	</select>
+	
+	<select id="getStatusCode" resultType="java.util.HashMap">
+		select
+			IMAGESTATECD,
+			IMAGESTATENAME,
+			REC_INS_TS,
+			REC_UPD_TS
+		from TB_PHOTOSTATE 
+	</select>
+	
+	
+	<select id="getCityInfo" resultType="java.util.HashMap">
+		select
+			id,
+			ken_id,
+			city_id,
+			town_id,
+			zip,
+			office_flg,
+			delete_flg,
+			ken_name,
+			ken_furi,
+			city_name,
+			city_furi,
+			town_name,
+			town_furi,
+			town_memo,
+			kyoto_street,
+			block_name,
+			block_furi,
+			memo,
+			office_name,
+			office_furi,
+			office_address,
+			new_id
+		from ad_address
+	</select>
+
+</mapper>

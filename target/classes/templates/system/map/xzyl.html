@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro" lang="ja">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content ">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-body">
+            <form class="form-horizontal m-t" id="searchForm" >
+            		<div class="form-group">
+                    	<label class="col-sm-1 control-label">写真名称： </label>
+                        <div class="col-sm-3" style="width: 320px;">
+                            <input id="image" name="image" class="form-control" type="text"
+                                data-bv-stringlength="true"
+                                data-bv-stringlength-max="50" data-bv-stringlength-message="５０文字以下で入力してください。" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label">写真年代：</label>
+                        <div class="col-sm-3" style="width: 160px;">
+							<select id ="imageyears" name="imageyears" class="form-control chosen-select" style="width: 100%">
+	                        </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label">写真状態： </label>
+                        <div class="col-sm-5" id="checkStatus">
+                        </div>
+                    </div>
+                    
+                     <div class="form-group">
+                    	<label class="col-sm-1 control-label">登録日付： </label>
+                        <div class="col-sm-2" style="width: 160px;">
+                            <input id="startime" name="startime" class="form-control" type="text">
+                        </div>
+                        <div class="col-sm-1" style="text-align: center;width: 20px;padding: 0px;top:5px;">
+                        	<span>-</span>
+                        </div>
+                        <div class="col-sm-2" style="width: 160px;">
+                            <input id="endtime" name="endtime" class="form-control" type="text">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label">住所名称：</label>
+                        <div class="col-sm-3" style="width: 320px;">
+                            <input id="addressname" name="addressname" class="form-control" type="text"
+                                data-bv-stringlength="true"
+                                data-bv-stringlength-max="20" data-bv-stringlength-message="２０文字以下で入力してください。" >
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label">住所： </label>
+                        <div class="col-sm-2" style="width: 160px;" >
+							<select data-placeholder="選択" id ="address1" name="address1" class="form-control chosen-select"  style="width: 100%">
+	                        </select>
+                        </div>
+                        <div class="col-sm-2" style="width: 160px;">
+							<select data-placeholder="選択" id ="address2" name="address2" class="form-control chosen-select"  style="width: 100%">
+	                        </select>
+                        </div>
+                        <div class="col-sm-1" style="width: 90px;">
+                            <input id="address3" name="address3" class="form-control" type="text" 
+	                            data-bv-integer="true" data-bv-integer-message="５数字以下で入力してください。" 
+                                data-bv-stringlength="true"
+                                data-bv-stringlength-max="5" data-bv-stringlength-message="５数字以下で入力してください。" >
+                        </div>
+                        <div class="col-sm-1" style="width: 30px;padding: 0;">
+                        	<label class="control-label">丁目 </label>
+                        </div>
+                        
+                        <div class="col-sm-1" style="width: 90px;">
+                            <input id="address4" name="address4" class="form-control" type="text" 
+	                            data-bv-integer="true" data-bv-integer-message="５数字以下で入力してください。" 
+                                data-bv-stringlength="true"
+                                data-bv-stringlength-max="5" data-bv-stringlength-message="５数字以下で入力してください。" >
+                        </div>
+						<div class="col-sm-1" style="width: 30px;padding: 0;">
+                        	<label class="control-label">番地 </label>
+                        </div>
+                        
+                        <div class="col-sm-1" style="width: 90px;">
+                            <input id="address5" name="address5" class="form-control" type="text" 
+	                            data-bv-integer="true" data-bv-integer-message="５数字以下で入力してください。" 
+                                data-bv-stringlength="true"
+                                data-bv-stringlength-max="5" data-bv-stringlength-message="５数字以下で入力してください。" >
+                        </div>
+                        <div class="col-sm-1" style="width: 30px;padding: 0;">
+                        	<label class="control-label">号 </label>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="form-group">
+<!--                         <label class="col-sm-1 control-label">郵便番号：</label> -->
+<!--                         <div class="col-sm-3" style="width: 160px;"> -->
+<!--                             <input id="postmail" name="postmail" class="form-control" type="text"  -->
+<!--                                 data-bv-stringlength="true" -->
+<!--                                 data-bv-stringlength-max="7" data-bv-stringlength-message="７数字以下で入力してください。" > -->
+<!--                         </div> -->
+
+                        <div class="col-sm-2">
+                            <button type="button" class="btn btn-success" onclick="reLoad()">
+                            	<i class="fa fa-search"></i> 検索
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <hr>
+                <div class="fixed-table-toolbar">
+                    <div class="columns pull-left">
+                        <button  type="button" class="btn btn-primary" onclick="add()">
+                            <i class="fa fa-plus" aria-hidden="true"></i>新規登録
+                        </button>
+<!--                         <button  type="button" class="btn btn-primary" onclick="add()"> -->
+<!--                             <i class="fa fa-plus" aria-hidden="true"></i>確定済一覧 -->
+<!--                         </button> -->
+<!--                         <button  type="button" class="btn btn-primary" onclick="add()"> -->
+<!--                             <i class="fa fa-plus" aria-hidden="true"></i>調査依頼一覧 -->
+<!--                         </button> -->
+                    </div>
+                </div>
+                
+                <table id="exampleTable" data-mobile-responsive="true"></table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--shiro控制bootstraptable行内按钮看见性 来自bootdo的创新方案 -->
+<div>
+    <script type="text/javascript">
+        var s_edit_h = 'hidden';
+        var s_remove_h = 'hidden';
+        var s_resetPwd_h = 'hidden';
+    </script>
+</div>
+<div>
+    <script type="text/javascript">
+        s_edit_h = '';
+    </script>
+</div>
+<div>
+    <script type="text/javascript">
+        var s_remove_h = '';
+    </script>
+</div>
+<div>
+    <script type="text/javascript">
+        var s_resetPwd_h = '';
+    </script>
+</div>
+<div th:include="include :: footer"></div>
+<script type="text/javascript" src="/js/appjs/system/map/xzyl.js"></script>
+<script type="text/javascript" src="/js/command.js"></script>
+
+<script type="text/javascript">
+$(function () {
+	$('#searchForm').bootstrapValidator().on('success.form.bv', function (e) { e.preventDefault(); });
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<!-- <head th:include="include :: header_with_param(~{::link})"> -->
+<!--     <link rel="stylesheet" th:href="@{/css/plugins/openlayers/ol.css}" type="text/css"> -->
+<!--  	<link href="/css/fileup/fileinput.css" media="all" rel="stylesheet" type="text/css"/> -->
+<!-- </head> -->
+<body class="gray-bg">
+<div class="wrapper wrapper-content ">
+		<div class="row">
+			<div class="col-sm-8">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+						<form class="form-horizontal m-t" id="signupForm">
+							<div class="form-group">
+								<label class="col-sm-3 control-label">コード：</label>
+								<div class="col-sm-5">
+<!-- 	                            data-bv-integer="true" data-bv-integer-message="数字でなければならない。"  -->
+<!--                                 data-bv-stringlength="true" -->
+<!--                                 data-bv-stringlength-max="2" data-bv-stringlength-message="２数字以下で入力してください。"  -->
+									<input id="imagestatecd" name="imagestatecd" 
+					            pattern="^([1-9]\d{0,1})$"
+					            data-bv-regexp-message="２数字以下で入力してください。" 
+                                class="form-control" type="text" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">名称：</label>
+								<div class="col-sm-5">
+									<input id="imagestatename" name="imagestatename" 
+                                data-bv-stringlength="true"
+                                data-bv-stringlength-max="20" data-bv-stringlength-message="２０文字以下で入力してください。" 
+                                class="form-control" type="text" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-7 col-sm-offset-3">
+									<button type="submit" class="btn btn-primary">確定</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:include="include::footer"></div>
+	<script type="text/javascript" src="/js/appjs/code/state/addstate.js"> </script>
+	<script type="text/javascript">
+		$(function () {
+			$('#signupForm').bootstrapValidator().on('success.form.bv', function (e) { e.preventDefault(); });
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: mapServer
+Implementation-Version: 2.0.0
+Built-By: Administrator
+Implementation-Vendor-Id: com.bootdo
+Build-Jdk: 1.8.0_161
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/mapServer
+Created-By: Maven Integration for Eclipse
+

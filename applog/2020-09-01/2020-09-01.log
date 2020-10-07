@@ -1,0 +1,1474 @@
+2020-09-01 09:07:16 -Starting BootdoApplication on 4MV9OKJMJU7FDK3 with PID 3488 (D:\AAAAAPrivateWork\mapServer\mapServer\target\classes started by Administrator in D:\AAAAAPrivateWork\mapServer\mapServer)
+2020-09-01 09:07:16 -The following profiles are active: dev
+2020-09-01 09:07:16 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1dd94f0f: startup date [Tue Sep 01 09:07:16 CST 2020]; root of context hierarchy
+2020-09-01 09:07:17 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-01 09:07:18 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3c20c2aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-01 09:07:18 -Tomcat initialized with port(s): 9999 (http)
+2020-09-01 09:07:18 -Initializing ProtocolHandler ["http-nio-9999"]
+2020-09-01 09:07:18 -Starting service [Tomcat]
+2020-09-01 09:07:18 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-01 09:07:18 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\LvShunJingKai\new_yilai\osg3.4\bin;D:\LvShunJingKai\new_yilai\osg_osgEarth2.8\bin;D:\LvShunJingKai\new_yilai\delta3D2.8\bin;D:\LvShunJingKai\new_yilai\gdal\bld\bin;C:\Qt\Qt5.4.2\5.4\msvc2013_64_opengl\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include;"C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;";";D:\AADevelop\apache-maven-3.5.4\bin";;D:\Soft\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;";D:\AADevelop\apache-maven-3.5.4\bin";C:\Program Files\nodejs\node_global;;.]
+2020-09-01 09:07:18 -Initializing Spring embedded WebApplicationContext
+2020-09-01 09:07:18 -Root WebApplicationContext: initialization completed in 1961 ms
+2020-09-01 09:07:19 -Servlet dispatcherServlet mapped to [/]
+2020-09-01 09:07:19 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-01 09:07:19 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-01 09:07:19 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-01 09:07:19 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-01 09:07:19 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 09:07:19 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1dd94f0f: startup date [Tue Sep 01 09:07:16 CST 2020]; root of context hierarchy
+2020-09-01 09:07:19 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-01 09:07:19 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-01 09:07:19 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-01 09:07:19 -Mapped "{[/googlemap],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.googleMap(org.springframework.ui.Model)
+2020-09-01 09:07:19 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-01 09:07:19 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-01 09:07:19 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-01 09:07:19 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-01 09:07:19 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 09:07:19 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 09:07:19 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 09:07:19 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.CoordinatesDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 09:07:19 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 09:07:19 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-01 09:07:19 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 09:07:19 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-01 09:07:19 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-01 09:07:19 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 09:07:19 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 09:07:20 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-01 09:07:20 -HikariPool-1 - Starting...
+2020-09-01 09:07:20 -HikariPool-1 - Start completed.
+2020-09-01 09:07:20 -Using default implementation for ThreadExecutor
+2020-09-01 09:07:20 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-01 09:07:20 -Quartz Scheduler v.2.2.1 created.
+2020-09-01 09:07:20 -RAMJobStore initialized.
+2020-09-01 09:07:20 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-01 09:07:20 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-01 09:07:20 -Quartz scheduler version: 2.2.1
+2020-09-01 09:07:20 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@500181f8
+2020-09-01 09:07:21 -LiveReload server is running on port 35729
+2020-09-01 09:07:21 -Registering beans for JMX exposure on startup
+2020-09-01 09:07:21 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-01 09:07:21 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-01 09:07:21 -Starting beans in phase 2147483647
+2020-09-01 09:07:21 -Starting Quartz Scheduler now
+2020-09-01 09:07:21 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-01 09:07:21 -Starting ProtocolHandler ["http-nio-9999"]
+2020-09-01 09:07:21 -Using a shared selector for servlet write/read
+2020-09-01 09:07:21 -Tomcat started on port(s): 9999 (http) with context path ''
+2020-09-01 09:07:21 -Started BootdoApplication in 5.037 seconds (JVM running for 6.108)
+2020-09-01 09:07:51 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-01 09:07:51 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-01 09:07:51 -FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2020-09-01 09:09:54 -Application shutdown requested.
+2020-09-01 09:09:54 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1dd94f0f: startup date [Tue Sep 01 09:07:16 CST 2020]; root of context hierarchy
+2020-09-01 09:09:54 -Stopping beans in phase 2147483647
+2020-09-01 09:09:54 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 09:09:54 -Shutting down Quartz Scheduler
+2020-09-01 09:09:54 -Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-01 09:09:54 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 09:09:54 -Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-01 09:09:54 -Unregistering JMX-exposed beans on shutdown
+2020-09-01 09:09:54 -Unregistering JMX-exposed beans
+2020-09-01 09:09:54 -HikariPool-1 - Shutdown initiated...
+2020-09-01 09:09:54 -HikariPool-1 - Shutdown completed.
+2020-09-01 10:03:00 -Starting BootdoApplication on 4MV9OKJMJU7FDK3 with PID 12996 (D:\AAAAAPrivateWork\mapServer\mapServer\target\classes started by Administrator in D:\AAAAAPrivateWork\mapServer\mapServer)
+2020-09-01 10:03:00 -The following profiles are active: dev
+2020-09-01 10:03:00 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1dbd75d: startup date [Tue Sep 01 10:03:00 CST 2020]; root of context hierarchy
+2020-09-01 10:03:02 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-01 10:03:03 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$49bc3b4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-01 10:03:04 -Tomcat initialized with port(s): 9999 (http)
+2020-09-01 10:03:04 -Initializing ProtocolHandler ["http-nio-9999"]
+2020-09-01 10:03:04 -Starting service [Tomcat]
+2020-09-01 10:03:04 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-01 10:03:04 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\LvShunJingKai\new_yilai\osg3.4\bin;D:\LvShunJingKai\new_yilai\osg_osgEarth2.8\bin;D:\LvShunJingKai\new_yilai\delta3D2.8\bin;D:\LvShunJingKai\new_yilai\gdal\bld\bin;C:\Qt\Qt5.4.2\5.4\msvc2013_64_opengl\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include;"C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;";";D:\AADevelop\apache-maven-3.5.4\bin";;D:\Soft\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;";D:\AADevelop\apache-maven-3.5.4\bin";C:\Program Files\nodejs\node_global;;.]
+2020-09-01 10:03:04 -Initializing Spring embedded WebApplicationContext
+2020-09-01 10:03:04 -Root WebApplicationContext: initialization completed in 3810 ms
+2020-09-01 10:03:04 -Servlet dispatcherServlet mapped to [/]
+2020-09-01 10:03:04 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-01 10:03:04 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-01 10:03:04 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-01 10:03:04 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-01 10:03:05 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 10:03:06 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1dbd75d: startup date [Tue Sep 01 10:03:00 CST 2020]; root of context hierarchy
+2020-09-01 10:03:06 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-01 10:03:06 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-01 10:03:06 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-01 10:03:06 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-01 10:03:06 -Mapped "{[/googlemap],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.googleMap(org.springframework.ui.Model)
+2020-09-01 10:03:06 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-01 10:03:06 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-01 10:03:06 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-01 10:03:06 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 10:03:06 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 10:03:06 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 10:03:06 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 10:03:06 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-01 10:03:06 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.CoordinatesDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 10:03:06 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 10:03:07 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-01 10:03:07 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-01 10:03:07 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 10:03:07 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 10:03:07 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-01 10:03:09 -HikariPool-1 - Starting...
+2020-09-01 10:03:10 -HikariPool-1 - Start completed.
+2020-09-01 10:03:10 -Using default implementation for ThreadExecutor
+2020-09-01 10:03:10 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-01 10:03:10 -Quartz Scheduler v.2.2.1 created.
+2020-09-01 10:03:10 -RAMJobStore initialized.
+2020-09-01 10:03:10 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-01 10:03:10 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-01 10:03:10 -Quartz scheduler version: 2.2.1
+2020-09-01 10:03:10 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@a463d49
+2020-09-01 10:03:10 -LiveReload server is running on port 35729
+2020-09-01 10:03:10 -Registering beans for JMX exposure on startup
+2020-09-01 10:03:10 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-01 10:03:10 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-01 10:03:11 -Starting beans in phase 2147483647
+2020-09-01 10:03:11 -Starting Quartz Scheduler now
+2020-09-01 10:03:11 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-01 10:03:11 -Starting ProtocolHandler ["http-nio-9999"]
+2020-09-01 10:03:11 -Using a shared selector for servlet write/read
+2020-09-01 10:03:11 -Tomcat started on port(s): 9999 (http) with context path ''
+2020-09-01 10:03:11 -Started BootdoApplication in 11.763 seconds (JVM running for 19.007)
+2020-09-01 10:08:15 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-01 10:08:15 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-01 10:08:15 -FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2020-09-01 10:25:39 -Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:479)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:687)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-09-01 11:02:33 -Application shutdown requested.
+2020-09-01 11:02:33 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1dbd75d: startup date [Tue Sep 01 10:03:00 CST 2020]; root of context hierarchy
+2020-09-01 11:02:33 -Stopping beans in phase 2147483647
+2020-09-01 11:02:33 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 11:02:34 -Shutting down Quartz Scheduler
+2020-09-01 11:02:34 -Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-01 11:02:34 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 11:02:34 -Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-01 11:02:34 -Unregistering JMX-exposed beans on shutdown
+2020-09-01 11:02:34 -Unregistering JMX-exposed beans
+2020-09-01 11:02:34 -HikariPool-1 - Shutdown initiated...
+2020-09-01 11:02:34 -HikariPool-1 - Shutdown completed.
+2020-09-01 11:07:08 -Starting BootdoApplication on 4MV9OKJMJU7FDK3 with PID 11464 (D:\AAAAAPrivateWork\mapServer\mapServer\target\classes started by Administrator in D:\AAAAAPrivateWork\mapServer\mapServer)
+2020-09-01 11:07:08 -The following profiles are active: dev
+2020-09-01 11:07:08 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c0ef244: startup date [Tue Sep 01 11:07:08 CST 2020]; root of context hierarchy
+2020-09-01 11:07:09 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-01 11:07:10 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd16c57a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-01 11:07:10 -Tomcat initialized with port(s): 9999 (http)
+2020-09-01 11:07:10 -Initializing ProtocolHandler ["http-nio-9999"]
+2020-09-01 11:07:10 -Starting service [Tomcat]
+2020-09-01 11:07:10 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-01 11:07:10 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\LvShunJingKai\new_yilai\osg3.4\bin;D:\LvShunJingKai\new_yilai\osg_osgEarth2.8\bin;D:\LvShunJingKai\new_yilai\delta3D2.8\bin;D:\LvShunJingKai\new_yilai\gdal\bld\bin;C:\Qt\Qt5.4.2\5.4\msvc2013_64_opengl\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include;"C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;";";D:\AADevelop\apache-maven-3.5.4\bin";;D:\Soft\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;";D:\AADevelop\apache-maven-3.5.4\bin";C:\Program Files\nodejs\node_global;;.]
+2020-09-01 11:07:10 -Initializing Spring embedded WebApplicationContext
+2020-09-01 11:07:10 -Root WebApplicationContext: initialization completed in 1929 ms
+2020-09-01 11:07:10 -Servlet dispatcherServlet mapped to [/]
+2020-09-01 11:07:10 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-01 11:07:10 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-01 11:07:10 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-01 11:07:10 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-01 11:07:11 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 11:07:11 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c0ef244: startup date [Tue Sep 01 11:07:08 CST 2020]; root of context hierarchy
+2020-09-01 11:07:11 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-01 11:07:11 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-01 11:07:11 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-01 11:07:11 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-01 11:07:11 -Mapped "{[/googlemap],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.googleMap(org.springframework.ui.Model)
+2020-09-01 11:07:11 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-01 11:07:11 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-01 11:07:11 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-01 11:07:11 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 11:07:11 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 11:07:11 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 11:07:11 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 11:07:11 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-01 11:07:11 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 11:07:11 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.CoordinatesDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 11:07:11 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-01 11:07:11 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-01 11:07:11 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 11:07:11 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 11:07:11 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-01 11:07:12 -HikariPool-1 - Starting...
+2020-09-01 11:07:12 -HikariPool-1 - Start completed.
+2020-09-01 11:07:12 -Using default implementation for ThreadExecutor
+2020-09-01 11:07:12 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-01 11:07:12 -Quartz Scheduler v.2.2.1 created.
+2020-09-01 11:07:12 -RAMJobStore initialized.
+2020-09-01 11:07:12 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-01 11:07:12 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-01 11:07:12 -Quartz scheduler version: 2.2.1
+2020-09-01 11:07:12 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@6914800e
+2020-09-01 11:07:13 -LiveReload server is running on port 35729
+2020-09-01 11:07:13 -Registering beans for JMX exposure on startup
+2020-09-01 11:07:13 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-01 11:07:13 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-01 11:07:13 -Starting beans in phase 2147483647
+2020-09-01 11:07:13 -Starting Quartz Scheduler now
+2020-09-01 11:07:13 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-01 11:07:13 -Starting ProtocolHandler ["http-nio-9999"]
+2020-09-01 11:07:13 -Using a shared selector for servlet write/read
+2020-09-01 11:07:13 -Tomcat started on port(s): 9999 (http) with context path ''
+2020-09-01 11:07:13 -Started BootdoApplication in 4.985 seconds (JVM running for 5.747)
+2020-09-01 11:07:18 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-01 11:07:18 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-01 11:07:18 -FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2020-09-01 11:07:27 -[THYMELEAF][http-nio-9999-exec-8] Exception processing template "system/map/detailxzyl": An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "dict.iamge" (template: "system/map/detailxzyl" - line 38, col 39)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "dict.iamge" (template: "system/map/detailxzyl" - line 38, col 39)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:165)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.LinkExpression.resolveParameters(LinkExpression.java:337)
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:283)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:126)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'iamge' cannot be found on object of type 'com.bootdo.system.domain.CoordinatesDO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:407)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:89)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:111)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:334)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	... 84 common frames omitted
+2020-09-01 11:07:27 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]")] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'iamge' cannot be found on object of type 'com.bootdo.system.domain.CoordinatesDO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:407)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:89)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:111)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:334)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:165)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.LinkExpression.resolveParameters(LinkExpression.java:337)
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:283)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:126)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-09-01 11:07:27 -Cannot render error page for request [/sys/detail/address] and exception [An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
+2020-09-01 13:40:49 -[THYMELEAF][http-nio-9999-exec-10] Exception processing template "system/map/detailxzyl": An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.attoparser.ParseException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]" - line 33, col 114)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]" - line 33, col 114)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529)
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+Caused by: org.attoparser.ParseException: (Line = 33, Column = 114) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 80 common frames omitted
+2020-09-01 13:40:49 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]")] with root cause
+org.attoparser.ParseException: (Line = 33, Column = 114) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529)
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-09-01 13:40:52 -[THYMELEAF][http-nio-9999-exec-4] Exception processing template "system/map/detailxzyl": An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.attoparser.ParseException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]" - line 33, col 114)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]" - line 33, col 114)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529)
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+Caused by: org.attoparser.ParseException: (Line = 33, Column = 114) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 80 common frames omitted
+2020-09-01 13:40:52 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]")] with root cause
+org.attoparser.ParseException: (Line = 33, Column = 114) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529)
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-09-01 13:41:18 -[THYMELEAF][http-nio-9999-exec-1] Exception processing template "system/map/detailxzyl": An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.attoparser.ParseException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]" - line 34, col 114)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]" - line 34, col 114)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529)
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+Caused by: org.attoparser.ParseException: (Line = 34, Column = 114) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 80 common frames omitted
+2020-09-01 13:41:18 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/system/map/detailxzyl.html]")] with root cause
+org.attoparser.ParseException: (Line = 34, Column = 114) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529)
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-09-01 14:01:27 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c0ef244: startup date [Tue Sep 01 11:07:08 CST 2020]; root of context hierarchy
+2020-09-01 14:01:27 -Stopping beans in phase 2147483647
+2020-09-01 14:01:27 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 14:01:27 -Shutting down Quartz Scheduler
+2020-09-01 14:01:27 -Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-01 14:01:27 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 14:01:27 -Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-01 14:01:27 -Unregistering JMX-exposed beans on shutdown
+2020-09-01 14:01:27 -Unregistering JMX-exposed beans
+2020-09-01 14:01:27 -HikariPool-1 - Shutdown initiated...
+2020-09-01 14:01:27 -HikariPool-1 - Shutdown completed.
+2020-09-01 14:01:27 -Starting BootdoApplication on 4MV9OKJMJU7FDK3 with PID 11464 (D:\AAAAAPrivateWork\mapServer\mapServer\target\classes started by Administrator in D:\AAAAAPrivateWork\mapServer\mapServer)
+2020-09-01 14:01:27 -The following profiles are active: dev
+2020-09-01 14:01:27 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@238b76d8: startup date [Tue Sep 01 14:01:27 CST 2020]; root of context hierarchy
+2020-09-01 15:09:56 -Starting BootdoApplication on 4MV9OKJMJU7FDK3 with PID 7124 (D:\AAAAAPrivateWork\mapServer\mapServer\target\classes started by Administrator in D:\AAAAAPrivateWork\mapServer\mapServer)
+2020-09-01 15:09:56 -The following profiles are active: dev
+2020-09-01 15:09:57 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5433556b: startup date [Tue Sep 01 15:09:57 CST 2020]; root of context hierarchy
+2020-09-01 15:09:57 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-01 15:09:58 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8333a693] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-01 15:09:58 -Tomcat initialized with port(s): 6669 (http)
+2020-09-01 15:09:58 -Initializing ProtocolHandler ["http-nio-6669"]
+2020-09-01 15:09:58 -Starting service [Tomcat]
+2020-09-01 15:09:58 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-01 15:09:58 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\LvShunJingKai\new_yilai\osg3.4\bin;D:\LvShunJingKai\new_yilai\osg_osgEarth2.8\bin;D:\LvShunJingKai\new_yilai\delta3D2.8\bin;D:\LvShunJingKai\new_yilai\gdal\bld\bin;C:\Qt\Qt5.4.2\5.4\msvc2013_64_opengl\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include;"C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;";";D:\AADevelop\apache-maven-3.5.4\bin";;D:\Soft\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;";D:\AADevelop\apache-maven-3.5.4\bin";C:\Program Files\nodejs\node_global;;.]
+2020-09-01 15:09:58 -Initializing Spring embedded WebApplicationContext
+2020-09-01 15:09:58 -Root WebApplicationContext: initialization completed in 1885 ms
+2020-09-01 15:09:59 -Servlet dispatcherServlet mapped to [/]
+2020-09-01 15:09:59 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-01 15:09:59 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-01 15:09:59 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-01 15:09:59 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-01 15:09:59 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 15:09:59 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5433556b: startup date [Tue Sep 01 15:09:57 CST 2020]; root of context hierarchy
+2020-09-01 15:09:59 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-01 15:09:59 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-01 15:09:59 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-01 15:09:59 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-01 15:09:59 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-01 15:09:59 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-01 15:09:59 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-01 15:09:59 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 15:09:59 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 15:09:59 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 15:09:59 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 15:09:59 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-01 15:09:59 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 15:09:59 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.CoordinatesDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 15:09:59 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-01 15:09:59 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-01 15:09:59 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 15:09:59 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 15:09:59 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-01 15:10:00 -HikariPool-1 - Starting...
+2020-09-01 15:10:00 -HikariPool-1 - Start completed.
+2020-09-01 15:10:00 -Using default implementation for ThreadExecutor
+2020-09-01 15:10:00 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-01 15:10:00 -Quartz Scheduler v.2.2.1 created.
+2020-09-01 15:10:00 -RAMJobStore initialized.
+2020-09-01 15:10:00 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-01 15:10:00 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-01 15:10:00 -Quartz scheduler version: 2.2.1
+2020-09-01 15:10:00 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@7b32f50f
+2020-09-01 15:10:01 -LiveReload server is running on port 35729
+2020-09-01 15:10:01 -Registering beans for JMX exposure on startup
+2020-09-01 15:10:01 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-01 15:10:01 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-01 15:10:01 -Starting beans in phase 2147483647
+2020-09-01 15:10:01 -Starting Quartz Scheduler now
+2020-09-01 15:10:01 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-01 15:10:01 -Starting ProtocolHandler ["http-nio-6669"]
+2020-09-01 15:10:01 -Failed to start connector [Connector[HTTP/1.1-6669]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-6669]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.bootdo.BootdoApplication.main(BootdoApplication.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 19 common frames omitted
+2020-09-01 15:10:01 -Pausing ProtocolHandler ["http-nio-6669"]
+2020-09-01 15:10:01 -Stopping service [Tomcat]
+2020-09-01 15:10:01 -The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2020-09-01 15:10:01 -Stopping ProtocolHandler ["http-nio-6669"]
+2020-09-01 15:10:01 -Destroying ProtocolHandler ["http-nio-6669"]
+2020-09-01 15:10:01 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-09-01 15:10:01 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 6669 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 6669, or configure this application to listen on another port.
+
+2020-09-01 15:10:01 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5433556b: startup date [Tue Sep 01 15:09:57 CST 2020]; root of context hierarchy
+2020-09-01 15:10:01 -Stopping beans in phase 2147483647
+2020-09-01 15:10:01 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 15:10:01 -Shutting down Quartz Scheduler
+2020-09-01 15:10:01 -Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-01 15:10:01 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 15:10:01 -Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-01 15:10:01 -Unregistering JMX-exposed beans on shutdown
+2020-09-01 15:10:01 -Unregistering JMX-exposed beans
+2020-09-01 15:10:01 -HikariPool-1 - Shutdown initiated...
+2020-09-01 15:10:01 -HikariPool-1 - Shutdown completed.
+2020-09-01 15:10:46 -Starting BootdoApplication on 4MV9OKJMJU7FDK3 with PID 1312 (D:\AAAAAPrivateWork\mapServer\mapServer\target\classes started by Administrator in D:\AAAAAPrivateWork\mapServer\mapServer)
+2020-09-01 15:10:46 -The following profiles are active: dev
+2020-09-01 15:10:46 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13dfa29f: startup date [Tue Sep 01 15:10:46 CST 2020]; root of context hierarchy
+2020-09-01 15:10:47 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-01 15:10:48 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3edf870f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-01 15:10:48 -Tomcat initialized with port(s): 6669 (http)
+2020-09-01 15:10:48 -Initializing ProtocolHandler ["http-nio-6669"]
+2020-09-01 15:10:48 -Starting service [Tomcat]
+2020-09-01 15:10:48 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-01 15:10:48 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\LvShunJingKai\new_yilai\osg3.4\bin;D:\LvShunJingKai\new_yilai\osg_osgEarth2.8\bin;D:\LvShunJingKai\new_yilai\delta3D2.8\bin;D:\LvShunJingKai\new_yilai\gdal\bld\bin;C:\Qt\Qt5.4.2\5.4\msvc2013_64_opengl\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include;"C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;";";D:\AADevelop\apache-maven-3.5.4\bin";;D:\Soft\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;";D:\AADevelop\apache-maven-3.5.4\bin";C:\Program Files\nodejs\node_global;;.]
+2020-09-01 15:10:48 -Initializing Spring embedded WebApplicationContext
+2020-09-01 15:10:48 -Root WebApplicationContext: initialization completed in 1826 ms
+2020-09-01 15:10:48 -Servlet dispatcherServlet mapped to [/]
+2020-09-01 15:10:48 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-01 15:10:48 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-01 15:10:48 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-01 15:10:48 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-01 15:10:49 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 15:10:49 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13dfa29f: startup date [Tue Sep 01 15:10:46 CST 2020]; root of context hierarchy
+2020-09-01 15:10:49 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-01 15:10:49 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-01 15:10:49 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-01 15:10:49 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-01 15:10:49 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-01 15:10:49 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-01 15:10:49 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-01 15:10:49 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 15:10:49 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 15:10:49 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 15:10:49 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 15:10:49 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.CoordinatesDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 15:10:49 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-01 15:10:49 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 15:10:49 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-01 15:10:49 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-01 15:10:49 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 15:10:49 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 15:10:49 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-01 15:10:50 -HikariPool-1 - Starting...
+2020-09-01 15:10:50 -HikariPool-1 - Start completed.
+2020-09-01 15:10:50 -Using default implementation for ThreadExecutor
+2020-09-01 15:10:50 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-01 15:10:50 -Quartz Scheduler v.2.2.1 created.
+2020-09-01 15:10:50 -RAMJobStore initialized.
+2020-09-01 15:10:50 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-01 15:10:50 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-01 15:10:50 -Quartz scheduler version: 2.2.1
+2020-09-01 15:10:50 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@6cc8ae04
+2020-09-01 15:10:50 -LiveReload server is running on port 35729
+2020-09-01 15:10:50 -Registering beans for JMX exposure on startup
+2020-09-01 15:10:50 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-01 15:10:50 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-01 15:10:50 -Starting beans in phase 2147483647
+2020-09-01 15:10:50 -Starting Quartz Scheduler now
+2020-09-01 15:10:50 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-01 15:10:50 -Starting ProtocolHandler ["http-nio-6669"]
+2020-09-01 15:10:50 -Using a shared selector for servlet write/read
+2020-09-01 15:10:50 -Tomcat started on port(s): 6669 (http) with context path ''
+2020-09-01 15:10:50 -Started BootdoApplication in 4.692 seconds (JVM running for 5.484)
+2020-09-01 15:11:14 -Application shutdown requested.
+2020-09-01 15:11:14 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13dfa29f: startup date [Tue Sep 01 15:10:46 CST 2020]; root of context hierarchy
+2020-09-01 15:11:14 -Stopping beans in phase 2147483647
+2020-09-01 15:11:14 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 15:11:14 -Shutting down Quartz Scheduler
+2020-09-01 15:11:14 -Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-01 15:11:14 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 15:11:14 -Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-01 15:11:14 -Unregistering JMX-exposed beans on shutdown
+2020-09-01 15:11:14 -Unregistering JMX-exposed beans
+2020-09-01 15:11:14 -HikariPool-1 - Shutdown initiated...
+2020-09-01 15:11:14 -HikariPool-1 - Shutdown completed.
+2020-09-01 15:11:29 -Starting BootdoApplication on 4MV9OKJMJU7FDK3 with PID 1676 (D:\AAAAAPrivateWork\mapServer\mapServer\target\classes started by Administrator in D:\AAAAAPrivateWork\mapServer\mapServer)
+2020-09-01 15:11:29 -The following profiles are active: dev
+2020-09-01 15:11:29 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ca44485: startup date [Tue Sep 01 15:11:29 CST 2020]; root of context hierarchy
+2020-09-01 15:11:30 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-01 15:11:31 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fd4e9084] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-01 15:11:31 -Tomcat initialized with port(s): 9999 (http)
+2020-09-01 15:11:31 -Initializing ProtocolHandler ["http-nio-9999"]
+2020-09-01 15:11:31 -Starting service [Tomcat]
+2020-09-01 15:11:31 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-01 15:11:31 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\LvShunJingKai\new_yilai\osg3.4\bin;D:\LvShunJingKai\new_yilai\osg_osgEarth2.8\bin;D:\LvShunJingKai\new_yilai\delta3D2.8\bin;D:\LvShunJingKai\new_yilai\gdal\bld\bin;C:\Qt\Qt5.4.2\5.4\msvc2013_64_opengl\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include;"C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;";";D:\AADevelop\apache-maven-3.5.4\bin";;D:\Soft\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;";D:\AADevelop\apache-maven-3.5.4\bin";C:\Program Files\nodejs\node_global;;.]
+2020-09-01 15:11:31 -Initializing Spring embedded WebApplicationContext
+2020-09-01 15:11:31 -Root WebApplicationContext: initialization completed in 1835 ms
+2020-09-01 15:11:31 -Servlet dispatcherServlet mapped to [/]
+2020-09-01 15:11:31 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-01 15:11:31 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-01 15:11:31 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-01 15:11:31 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-01 15:11:32 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 15:11:32 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ca44485: startup date [Tue Sep 01 15:11:29 CST 2020]; root of context hierarchy
+2020-09-01 15:11:32 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-01 15:11:32 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-01 15:11:32 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-01 15:11:32 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-01 15:11:32 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-01 15:11:32 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-01 15:11:32 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-01 15:11:32 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 15:11:32 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 15:11:32 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 15:11:32 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.CoordinatesDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 15:11:32 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 15:11:32 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 15:11:32 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-01 15:11:32 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-01 15:11:32 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-01 15:11:32 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 15:11:32 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 15:11:32 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-01 15:11:33 -HikariPool-1 - Starting...
+2020-09-01 15:11:33 -HikariPool-1 - Start completed.
+2020-09-01 15:11:33 -Using default implementation for ThreadExecutor
+2020-09-01 15:11:33 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-01 15:11:33 -Quartz Scheduler v.2.2.1 created.
+2020-09-01 15:11:33 -RAMJobStore initialized.
+2020-09-01 15:11:33 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-01 15:11:33 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-01 15:11:33 -Quartz scheduler version: 2.2.1
+2020-09-01 15:11:33 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@5542fe57
+2020-09-01 15:11:34 -LiveReload server is running on port 35729
+2020-09-01 15:11:34 -Registering beans for JMX exposure on startup
+2020-09-01 15:11:34 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-01 15:11:34 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-01 15:11:34 -Starting beans in phase 2147483647
+2020-09-01 15:11:34 -Starting Quartz Scheduler now
+2020-09-01 15:11:34 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-01 15:11:34 -Starting ProtocolHandler ["http-nio-9999"]
+2020-09-01 15:11:34 -Using a shared selector for servlet write/read
+2020-09-01 15:11:34 -Tomcat started on port(s): 9999 (http) with context path ''
+2020-09-01 15:11:34 -Started BootdoApplication in 4.746 seconds (JVM running for 5.558)
+2020-09-01 15:11:39 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-01 15:11:39 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-01 15:11:39 -FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2020-09-01 15:11:47 -Application shutdown requested.
+2020-09-01 15:11:47 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ca44485: startup date [Tue Sep 01 15:11:29 CST 2020]; root of context hierarchy
+2020-09-01 15:11:47 -Stopping beans in phase 2147483647
+2020-09-01 15:11:47 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 15:11:47 -Shutting down Quartz Scheduler
+2020-09-01 15:11:47 -Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-01 15:11:47 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 15:11:47 -Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-01 15:11:47 -Unregistering JMX-exposed beans on shutdown
+2020-09-01 15:11:47 -Unregistering JMX-exposed beans
+2020-09-01 15:11:47 -HikariPool-1 - Shutdown initiated...
+2020-09-01 15:11:47 -HikariPool-1 - Shutdown completed.
+2020-09-01 15:11:56 -Starting BootdoApplication on 4MV9OKJMJU7FDK3 with PID 5360 (D:\AAAAAPrivateWork\mapServer\mapServer\target\classes started by Administrator in D:\AAAAAPrivateWork\mapServer\mapServer)
+2020-09-01 15:11:56 -The following profiles are active: dev
+2020-09-01 15:11:56 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36274c11: startup date [Tue Sep 01 15:11:56 CST 2020]; root of context hierarchy
+2020-09-01 15:11:56 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-01 15:11:57 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d70817dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-01 15:11:57 -Tomcat initialized with port(s): 6669 (http)
+2020-09-01 15:11:57 -Initializing ProtocolHandler ["http-nio-6669"]
+2020-09-01 15:11:57 -Starting service [Tomcat]
+2020-09-01 15:11:57 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-01 15:11:57 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\LvShunJingKai\new_yilai\osg3.4\bin;D:\LvShunJingKai\new_yilai\osg_osgEarth2.8\bin;D:\LvShunJingKai\new_yilai\delta3D2.8\bin;D:\LvShunJingKai\new_yilai\gdal\bld\bin;C:\Qt\Qt5.4.2\5.4\msvc2013_64_opengl\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include;"C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;";";D:\AADevelop\apache-maven-3.5.4\bin";;D:\Soft\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;";D:\AADevelop\apache-maven-3.5.4\bin";C:\Program Files\nodejs\node_global;;.]
+2020-09-01 15:11:57 -Initializing Spring embedded WebApplicationContext
+2020-09-01 15:11:57 -Root WebApplicationContext: initialization completed in 1830 ms
+2020-09-01 15:11:58 -Servlet dispatcherServlet mapped to [/]
+2020-09-01 15:11:58 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-01 15:11:58 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-01 15:11:58 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-01 15:11:58 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-01 15:11:58 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 15:11:58 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36274c11: startup date [Tue Sep 01 15:11:56 CST 2020]; root of context hierarchy
+2020-09-01 15:11:58 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-01 15:11:58 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-01 15:11:58 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-01 15:11:58 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-01 15:11:58 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-01 15:11:58 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-01 15:11:58 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-01 15:11:58 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 15:11:58 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 15:11:58 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 15:11:58 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 15:11:58 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-01 15:11:58 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 15:11:58 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.CoordinatesDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 15:11:58 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-01 15:11:58 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-01 15:11:58 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 15:11:58 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 15:11:59 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-01 15:11:59 -HikariPool-1 - Starting...
+2020-09-01 15:11:59 -HikariPool-1 - Start completed.
+2020-09-01 15:11:59 -Using default implementation for ThreadExecutor
+2020-09-01 15:11:59 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-01 15:11:59 -Quartz Scheduler v.2.2.1 created.
+2020-09-01 15:11:59 -RAMJobStore initialized.
+2020-09-01 15:11:59 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-01 15:11:59 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-01 15:11:59 -Quartz scheduler version: 2.2.1
+2020-09-01 15:11:59 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@2a748191
+2020-09-01 15:12:00 -LiveReload server is running on port 35729
+2020-09-01 15:12:00 -Registering beans for JMX exposure on startup
+2020-09-01 15:12:00 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-01 15:12:00 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-01 15:12:00 -Starting beans in phase 2147483647
+2020-09-01 15:12:00 -Starting Quartz Scheduler now
+2020-09-01 15:12:00 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-01 15:12:00 -Starting ProtocolHandler ["http-nio-6669"]
+2020-09-01 15:12:00 -Using a shared selector for servlet write/read
+2020-09-01 15:12:00 -Tomcat started on port(s): 6669 (http) with context path ''
+2020-09-01 15:12:00 -Started BootdoApplication in 4.7 seconds (JVM running for 5.485)
+2020-09-01 15:14:10 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36274c11: startup date [Tue Sep 01 15:11:56 CST 2020]; root of context hierarchy
+2020-09-01 15:14:10 -Stopping beans in phase 2147483647
+2020-09-01 15:14:10 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 15:14:10 -Shutting down Quartz Scheduler
+2020-09-01 15:14:10 -Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-01 15:14:10 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 15:14:10 -Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-01 15:14:10 -Unregistering JMX-exposed beans on shutdown
+2020-09-01 15:14:10 -Unregistering JMX-exposed beans
+2020-09-01 15:14:10 -HikariPool-1 - Shutdown initiated...
+2020-09-01 15:14:10 -HikariPool-1 - Shutdown completed.
+2020-09-01 15:14:10 -Starting BootdoApplication on 4MV9OKJMJU7FDK3 with PID 5360 (D:\AAAAAPrivateWork\mapServer\mapServer\target\classes started by Administrator in D:\AAAAAPrivateWork\mapServer\mapServer)
+2020-09-01 15:14:10 -The following profiles are active: dev
+2020-09-01 15:14:10 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4f454677: startup date [Tue Sep 01 15:14:10 CST 2020]; root of context hierarchy
+2020-09-01 16:46:19 -Starting BootdoApplication on 4MV9OKJMJU7FDK3 with PID 5880 (D:\AAAAAPrivateWork\mapServer\mapServer\target\classes started by Administrator in D:\AAAAAPrivateWork\mapServer\mapServer)
+2020-09-01 16:46:19 -The following profiles are active: dev
+2020-09-01 16:46:19 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13dfa29f: startup date [Tue Sep 01 16:46:19 CST 2020]; root of context hierarchy
+2020-09-01 16:46:19 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-01 16:46:20 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dca349c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-01 16:46:20 -Tomcat initialized with port(s): 9991 (http)
+2020-09-01 16:46:20 -Initializing ProtocolHandler ["http-nio-9991"]
+2020-09-01 16:46:20 -Starting service [Tomcat]
+2020-09-01 16:46:20 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-01 16:46:20 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\LvShunJingKai\new_yilai\osg3.4\bin;D:\LvShunJingKai\new_yilai\osg_osgEarth2.8\bin;D:\LvShunJingKai\new_yilai\delta3D2.8\bin;D:\LvShunJingKai\new_yilai\gdal\bld\bin;C:\Qt\Qt5.4.2\5.4\msvc2013_64_opengl\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include;"C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;";";D:\AADevelop\apache-maven-3.5.4\bin";;D:\Soft\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;";D:\AADevelop\apache-maven-3.5.4\bin";C:\Program Files\nodejs\node_global;;.]
+2020-09-01 16:46:20 -Initializing Spring embedded WebApplicationContext
+2020-09-01 16:46:20 -Root WebApplicationContext: initialization completed in 1849 ms
+2020-09-01 16:46:21 -Servlet dispatcherServlet mapped to [/]
+2020-09-01 16:46:21 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-01 16:46:21 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-01 16:46:21 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-01 16:46:21 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-01 16:46:21 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 16:46:21 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13dfa29f: startup date [Tue Sep 01 16:46:19 CST 2020]; root of context hierarchy
+2020-09-01 16:46:21 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-01 16:46:21 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-01 16:46:21 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-01 16:46:21 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-01 16:46:21 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-01 16:46:21 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-01 16:46:21 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-01 16:46:21 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 16:46:21 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 16:46:21 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.CoordinatesDO,org.springframework.web.multipart.MultipartFile)
+2020-09-01 16:46:21 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.CoordinatesDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-01 16:46:21 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-01 16:46:21 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 16:46:21 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-01 16:46:21 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-01 16:46:21 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-01 16:46:21 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 16:46:21 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 16:46:22 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-01 16:46:22 -HikariPool-1 - Starting...
+2020-09-01 16:46:23 -HikariPool-1 - Start completed.
+2020-09-01 16:46:23 -Using default implementation for ThreadExecutor
+2020-09-01 16:46:23 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-01 16:46:23 -Quartz Scheduler v.2.2.1 created.
+2020-09-01 16:46:23 -RAMJobStore initialized.
+2020-09-01 16:46:23 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-01 16:46:23 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-01 16:46:23 -Quartz scheduler version: 2.2.1
+2020-09-01 16:46:23 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@384692ed
+2020-09-01 16:46:23 -LiveReload server is running on port 35729
+2020-09-01 16:46:23 -Registering beans for JMX exposure on startup
+2020-09-01 16:46:23 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-01 16:46:23 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-01 16:46:23 -Starting beans in phase 2147483647
+2020-09-01 16:46:23 -Starting Quartz Scheduler now
+2020-09-01 16:46:23 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-01 16:46:23 -Starting ProtocolHandler ["http-nio-9991"]
+2020-09-01 16:46:23 -Using a shared selector for servlet write/read
+2020-09-01 16:46:23 -Tomcat started on port(s): 9991 (http) with context path ''
+2020-09-01 16:46:23 -Started BootdoApplication in 5.113 seconds (JVM running for 5.874)
+2020-09-01 16:46:41 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-01 16:46:41 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-01 16:46:41 -FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2020-09-01 16:46:52 -Application shutdown requested.
+2020-09-01 16:46:52 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13dfa29f: startup date [Tue Sep 01 16:46:19 CST 2020]; root of context hierarchy
+2020-09-01 16:46:52 -Stopping beans in phase 2147483647
+2020-09-01 16:46:52 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 16:46:52 -Application shutdown requested.
+2020-09-01 16:46:52 -Application shutdown requested.
+2020-09-01 16:46:52 -Shutting down Quartz Scheduler
+2020-09-01 16:46:52 -Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-01 16:46:52 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-01 16:46:52 -Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-01 16:46:52 -Unregistering JMX-exposed beans on shutdown
+2020-09-01 16:46:52 -Unregistering JMX-exposed beans
+2020-09-01 16:46:52 -HikariPool-1 - Shutdown initiated...
+2020-09-01 16:46:52 -HikariPool-1 - Shutdown completed.

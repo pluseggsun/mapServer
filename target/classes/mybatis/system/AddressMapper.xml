@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bootdo.system.dao.AddressDao">
+
+	<select id="get" resultType="com.bootdo.system.domain.ImageAddressDO">
+		select
+			ADDRESSNAME,
+			ADDRESSNO,
+			GOOGLEMAPMARKX,
+			GOOGLEMAPMARKY,
+			ADDRESS1,
+			ADDRESS2,
+			ADDRESS3,
+			ADDRESS4,
+			ADDRESS5,
+			POSTMAIL,
+			ADDRESSCONTENT,
+			REC_INS_TS recInsTs,
+			REC_UPD_TS recUpdTs
+		from TB_ADDRESSINFO where ADDRESSNO = #{value}
+	</select>
+
+	<select id="list" resultType="com.bootdo.system.domain.ImageAddressDO">
+		select
+			ADDRESSNAME,
+			ADDRESSNO,
+			GOOGLEMAPMARKX,
+			GOOGLEMAPMARKY,
+			ADDRESS1,
+			ADDRESS2,
+			ADDRESS3,
+			ADDRESS4,
+			ADDRESS5,
+			POSTMAIL,
+			ADDRESSCONTENT,
+			REC_INS_TS recInsTs,
+			REC_UPD_TS recUpdTs
+		from TB_ADDRESSINFO
+		<where>
+			<if test="addressname != null and addressname != ''">and ADDRESSNAME = #{addressname} </if>
+			<if test="addressno != null and addressno != ''">and ADDRESSNO = #{addressno} </if>
+			<if test="googlemapmarkx != null and googlemapmarkx != ''">and GOOGLEMAPMARKX = #{googlemapmarkx} </if>
+			<if test="googlemapmarky != null and googlemapmarky != ''">and GOOGLEMAPMARKY = #{googlemapmarky} </if>
+			<if test="address1 != null and address1 != ''">and ADDRESS1 = #{address1} </if>
+			<if test="address2 != null and address2 != ''">and ADDRESS2 = #{address2} </if>
+			<if test="address3 != null and address3 != ''">and ADDRESS3 = #{address3} </if>
+			<if test="address4 != null and address4 != ''">and ADDRESS4 = #{address4} </if>
+			<if test="address5 != null and address5 != ''">and ADDRESS5 = #{address5} </if>
+			<if test="postmail != null and postmail != ''">and POSTMAIL = #{postmail} </if>
+			<if test="addresscontent != null and addresscontent != ''">and ADDRESSCONTENT = #{addresscontent} </if>
+		</where>
+		<choose>
+			<when test="sortby != null and sortby.trim() != ''">
+				order by ${sortby} ${order}
+			</when>
+			<otherwise>
+				order bADDRESSNONO asc
+			</otherwise>
+		</choose>
+		<if test="offset != null and limit != null">
+			limit #{limit} offset #{offset} 
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		select count(*) from TB_ADDRESSINFO
+		<where>
+			<if test="addressname != null and addressname != ''">and ADDRESSNAME = #{addressname} </if>
+			<if test="addressno != null and addressno != ''">and ADDRESSNO = #{addressno} </if>
+			<if test="googlemapmarkx != null and googlemapmarkx != ''">and GOOGLEMAPMARKX = #{googlemapmarkx} </if>
+			<if test="googlemapmarky != null and googlemapmarky != ''">and GOOGLEMAPMARKY = #{googlemapmarky} </if>
+			<if test="address1 != null and address1 != ''">and ADDRESS1 = #{address1} </if>
+			<if test="address2 != null and address2 != ''">and ADDRESS2 = #{address2} </if>
+			<if test="address3 != null and address3 != ''">and ADDRESS3 = #{address3} </if>
+			<if test="address4 != null and address4 != ''">and ADDRESS4 = #{address4} </if>
+			<if test="address5 != null and address5 != ''">and ADDRESS5 = #{address5} </if>
+			<if test="postmail != null and postmail != ''">and POSTMAIL = #{postmail} </if>
+			<if test="addresscontent != null and addresscontent != ''">and ADDRESSCONTENT = #{addresscontent} </if>
+		</where>
+	</select>
+
+	<insert id="save" parameterType="com.bootdo.system.domain.ImageAddressDO"
+		useGeneratedKeys="true" keyProperty="addressno">
+		INSERT INTO TB_ADDRESSINFO (
+			ADDRESSNAME,
+			GOOGLEMAPMARKX,
+			GOOGLEMAPMARKY,
+			ADDRESS1,
+			ADDRESS2,
+			ADDRESS3,
+			ADDRESS4,
+			ADDRESS5,
+			POSTMAIL,
+			ADDRESSCONTENT,
+			REC_INS_TS,
+			REC_UPD_TS
+		)
+		VALUES
+		(
+		#{addressname},
+		#{googlemapmarkx},
+		#{googlemapmarky},
+		#{address1},
+		#{address2},
+		#{address3},
+		#{address4},
+		#{address5},
+		#{postmail},
+		#{addresscontent},
+		now(),
+		now()
+		)
+	</insert>
+
+	<update id="update" parameterType="com.bootdo.system.domain.ImageAddressDO">
+		update TB_ADDRESSINFO
+		<set>
+			<if test="addressname != null">ADDRESSNAME = #{addressname}, </if>
+			<if test="googlemapmarkx != null">GOOGLEMAPMARKX = #{googlemapmarkx}, </if>
+			<if test="googlemapmarky != null">GOOGLEMAPMARKY = #{googlemapmarky}, </if>
+			<if test="address1 != null">ADDRESS1 = #{address1}, </if>
+			<if test="address2 != null">ADDRESS2 = #{address2}, </if>
+			<if test="address3 != null">ADDRESS3 = #{address3}, </if>
+			<if test="address4 != null">ADDRESS4 = #{address4}, </if>
+			<if test="address5 != null">ADDRESS5 = #{address5}, </if>
+			<if test="postmail != null">POSTMAIL = #{postmail}, </if>
+			<if test="addresscontent != null">ADDRESSCONTENT = #{addresscontent}, </if>
+			REC_UPD_TS = now()
+		</set>
+		where ADDRESSNO = #{addressno}
+	</update>
+
+	<delete id="remove">
+		delete from TB_ADDRESSINFO where ADDRESSNO = #{value}
+	</delete>
+	
+<!-- 	<delete id="removeUpd"> -->
+<!-- 		update TB_ADDRESSINFO set DEL_FLG = 1 where ADDRESSNO = #{value} -->
+<!-- 	</delete> -->
+
+
+	<select id="getByMapCoordinates" resultType="com.bootdo.system.domain.ImageAddressDO">
+		SELECT
+		
+			aa.IMAGEYEARSNAME,
+			bb.IMAGESTATENAME,
+			cc.CITY_NAME cityName,
+			cc.TOWN_NAME townName,
+			
+			addr.ADDRESSNO,
+			addr.GOOGLEMAPMARKX,
+			addr.GOOGLEMAPMARKY,
+			ADDRESSNAME,
+			ADDRESS1,
+			ADDRESS2,
+			ADDRESS3,
+			ADDRESS4,
+			ADDRESS5,
+			POSTMAIL,
+			ADDRESSCONTENT,
+			
+			IMAGERESOOLD,
+			IMAGERESONEW,
+			IMAGE,
+			IMAGEYEARS,
+			IMAGECONTENT,
+			IMAGESTATE,
+			
+			im.IMAGENO REGISTERNOIMAGE,
+			im.REC_INS_TS recInsTs,
+			im.REC_UPD_TS recUpdTs
+		FROM TB_ADDRESSINFO addr RIGHT JOIN TB_PHOTOINFO im ON 
+		addr.ADDRESSNO = im.ADDRESSNO
+		
+		LEFT JOIN TB_PHOTOYEAR aa ON aa.IMAGEYEARSCD = im.IMAGEYEARS
+		LEFT JOIN TB_PHOTOSTATE bb ON bb.IMAGESTATECD = im.IMAGESTATE
+		LEFT JOIN ad_address cc ON cc.town_id = addr.ADDRESS2
+		
+		where im.IMAGENO = #{value}
+	</select>
+
+	<select id="listAll" resultType="com.bootdo.system.domain.ImageAddressDO">
+		SELECT
+		
+			aa.IMAGEYEARSNAME,
+			bb.IMAGESTATENAME,
+			cc.CITY_NAME cityName,
+			cc.TOWN_NAME townName,
+			
+			addr.ADDRESSNO,
+			addr.GOOGLEMAPMARKX,
+			addr.GOOGLEMAPMARKY,
+			ADDRESSNAME,
+			ADDRESS1,
+			ADDRESS2,
+			ADDRESS3,
+			ADDRESS4,
+			ADDRESS5,
+			POSTMAIL,
+			ADDRESSCONTENT,
+			
+			IMAGERESOOLD,
+			IMAGERESONEW,
+			IMAGE,
+			IMAGEYEARS,
+			IMAGECONTENT,
+			IMAGESTATE,
+			
+			im.ADDRESSNO mapid,
+			im.IMAGENO REGISTERNOIMAGE,
+			im.REC_INS_TS recInsTs,
+			im.REC_UPD_TS recUpdTs
+		FROM TB_ADDRESSINFO addr RIGHT JOIN TB_PHOTOINFO im ON  
+		addr.ADDRESSNO = im.ADDRESSNO
+		
+		LEFT JOIN TB_PHOTOYEAR aa ON aa.IMAGEYEARSCD = im.IMAGEYEARS
+		LEFT JOIN TB_PHOTOSTATE bb ON bb.IMAGESTATECD = im.IMAGESTATE
+		LEFT JOIN ad_address cc ON cc.town_id = addr.ADDRESS2
+		
+		<where>
+			<if test="addressname != null and addressname != ''">and ADDRESSNAME like concat('%', #{addressname}, '%') </if>
+			<if test="addressno != null and addressno != ''">and ADDRESSNO = #{addressno} </if>
+<!-- 			<if test="googlemapmarkx != null and googlemapmarkx != ''">and im.GOOGLEMAPMARKX = #{googlemapmarkx} </if> -->
+<!-- 			<if test="googlemapmarky != null and googlemapmarky != ''">and im.GOOGLEMAPMARKY = #{googlemapmarky} </if> -->
+<!-- 			<if test="address1 != null and address1 != ''">and ADDRESS1 = #{address1} </if> -->
+			<if test="address2 != null and address2 != ''">and ADDRESS2 = #{address2} </if>
+			<if test="address3 != null and address3 != ''">and ADDRESS3 = #{address3} </if>
+			<if test="address4 != null and address4 != ''">and ADDRESS4 = #{address4} </if>
+			<if test="address5 != null and address5 != ''">and ADDRESS5 = #{address5} </if>
+			<if test="postmail != null and postmail != ''">and POSTMAIL = #{postmail} </if>
+			<if test="addresscontent != null and addresscontent != ''">and ADDRESSCONTENT = #{addresscontent} </if>
+			
+			<if test="imageresoold != null and imageresoold != ''">and IMAGERESOOLD = #{imageresoold} </if>
+			<if test="imageresonew != null and imageresonew != ''">and IMAGERESONEW = #{imageresonew} </if>
+			<if test="image != null and image != ''">and IMAGE like concat('%', #{image}, '%') </if>
+			<if test="imageyears != null and imageyears != ''">and IMAGEYEARS = #{imageyears} </if>
+			<if test="imagecontent != null and imagecontent != ''">and IMAGECONTENT = #{imagecontent} </if>
+			<if test="startime!=null and startime!=''">
+                and DATE_FORMAT(im.REC_INS_TS, '%Y-%m-%d') &gt;=  DATE_FORMAT(#{startime}, '%Y-%m-%d')
+	        </if>
+	        <if test="endtime!=null and endtime!=''">
+	            and DATE_FORMAT(im.REC_INS_TS, '%Y-%m-%d') &lt;= DATE_FORMAT(#{endtime}, '%Y-%m-%d')
+	        </if>
+        
+			<if test="status != null and status.length > 0">
+                and IMAGESTATE in
+                <foreach collection="status" item="item"  open="(" close=")" separator=",">
+                    #{item}
+                </foreach>
+            </if>
+			
+		</where>
+		<choose>
+			<when test="sortby != null and sortby.trim() != ''">
+				order by ${sortby} ${order}
+			</when>
+			<otherwise>
+				order by ADDRESSNO asc
+			</otherwise>
+		</choose>
+		<if test="offset != null and limit != null">
+			limit #{limit} offset #{offset} 
+		</if>
+	</select>
+
+	<select id="countAll" resultType="int">
+		SELECT
+			count(*)
+		FROM TB_ADDRESSINFO addr RIGHT JOIN TB_PHOTOINFO im ON  
+		addr.ADDRESSNO = im.ADDRESSNO
+		<where>
+			<if test="addressname != null and addressname != ''">and ADDRESSNAME like concat('%', #{addressname}, '%') </if>
+			<if test="addressno != null and addressno != ''">and ADDRESSNO = #{addressno} </if>
+			<if test="googlemapmarkx != null and googlemapmarkx != ''">and GOOGLEMAPMARKX = #{googlemapmarkx} </if>
+			<if test="googlemapmarky != null and googlemapmarky != ''">and GOOGLEMAPMARKY = #{googlemapmarky} </if>
+<!-- 			<if test="address1 != null and address1 != ''">and ADDRESS1 = #{address1} </if> -->
+			<if test="address2 != null and address2 != ''">and ADDRESS2 = #{address2} </if>
+			<if test="address3 != null and address3 != ''">and ADDRESS3 = #{address3} </if>
+			<if test="address4 != null and address4 != ''">and ADDRESS4 = #{address4} </if>
+			<if test="address5 != null and address5 != ''">and ADDRESS5 = #{address5} </if>
+			<if test="postmail != null and postmail != ''">and POSTMAIL = #{postmail} </if>
+			<if test="addresscontent != null and addresscontent != ''">and ADDRESSCONTENT = #{addresscontent} </if>
+			
+			<if test="imageresoold != null and imageresoold != ''">and IMAGERESOOLD = #{imageresoold} </if>
+			<if test="imageresonew != null and imageresonew != ''">and IMAGERESONEW = #{imageresonew} </if>
+			<if test="image != null and image != ''">and IMAGE like concat('%', #{image}, '%') </if>
+			<if test="imageyears != null and imageyears != ''">and IMAGEYEARS = #{imageyears} </if>
+			<if test="imagecontent != null and imagecontent != ''">and IMAGECONTENT = #{imagecontent} </if>
+			<if test="startime!=null and startime!=''">
+                and DATE_FORMAT(im.REC_INS_TS, '%Y-%m-%d') &gt;=  DATE_FORMAT(#{startime}, '%Y-%m-%d')
+	        </if>
+	        <if test="endtime!=null and endtime!=''">
+	            and DATE_FORMAT(im.REC_INS_TS, '%Y-%m-%d') &lt;= DATE_FORMAT(#{endtime}, '%Y-%m-%d')
+	        </if>
+	        
+			<if test="status != null and status.length > 0">
+                and IMAGESTATE in
+                <foreach collection="status" item="item"  open="(" close=")" separator=",">
+                    #{item}
+                </foreach>
+            </if>
+			
+		</where>
+	</select>
+	
+	<select id="listMapGoogleAll" resultType="com.bootdo.system.domain.ImageAddressDO">
+		SELECT
+	    	MAX(im.IMAGENO),
+			aa.IMAGEYEARSNAME,
+			bb.IMAGESTATENAME,
+			cc.CITY_NAME cityName,
+			cc.TOWN_NAME townName,
+			
+			addr.ADDRESSNO,
+			addr.GOOGLEMAPMARKX,
+			addr.GOOGLEMAPMARKY,
+			ADDRESSNAME,
+			ADDRESS1,
+			ADDRESS2,
+			ADDRESS3,
+			ADDRESS4,
+			ADDRESS5,
+			POSTMAIL,
+			ADDRESSCONTENT,
+			
+			IMAGERESOOLD,
+			IMAGERESONEW,
+			IMAGE,
+			IMAGEYEARS,
+			IMAGECONTENT,
+			IMAGESTATE,
+			
+			im.ADDRESSNO mapid,
+			im.IMAGENO REGISTERNOIMAGE,
+			im.REC_INS_TS recInsTs,
+			im.REC_UPD_TS recUpdTs
+		FROM TB_ADDRESSINFO addr INNER JOIN TB_PHOTOINFO im ON  
+		addr.ADDRESSNO = im.ADDRESSNO
+		
+		INNER JOIN TB_PHOTOYEAR aa ON aa.IMAGEYEARSCD = im.IMAGEYEARS
+		INNER JOIN TB_PHOTOSTATE bb ON bb.IMAGESTATECD = im.IMAGESTATE
+		INNER JOIN ad_address cc ON cc.town_id = addr.ADDRESS2
+		
+		<where>
+			<if test="addressname != null and addressname != ''">and ADDRESSNAME like concat('%', #{addressname}, '%') </if>
+			<if test="addressno != null and addressno != ''">and ADDRESSNO = #{addressno} </if>
+			<if test="address2 != null and address2 != ''">and ADDRESS2 = #{address2} </if>
+			<if test="address3 != null and address3 != ''">and ADDRESS3 = #{address3} </if>
+			<if test="address4 != null and address4 != ''">and ADDRESS4 = #{address4} </if>
+			<if test="address5 != null and address5 != ''">and ADDRESS5 = #{address5} </if>
+			<if test="postmail != null and postmail != ''">and POSTMAIL = #{postmail} </if>
+			<if test="addresscontent != null and addresscontent != ''">and ADDRESSCONTENT = #{addresscontent} </if>
+			<if test="imageresoold != null and imageresoold != ''">and IMAGERESOOLD = #{imageresoold} </if>
+			<if test="imageresonew != null and imageresonew != ''">and IMAGERESONEW = #{imageresonew} </if>
+			<if test="image != null and image != ''">and IMAGE like concat('%', #{image}, '%') </if>
+			<if test="imageyears != null and imageyears != ''">and IMAGEYEARS = #{imageyears} </if>
+			<if test="imagecontent != null and imagecontent != ''">and IMAGECONTENT = #{imagecontent} </if>
+			and bb.IMAGESTATENAME = '公開済'
+			GROUP BY 
+				addr.ADDRESSNO
+		</where>
+	</select>
+	
+	
+	<select id="listMapGoogleById" resultType="com.bootdo.system.domain.ImageAddressDO">
+		SELECT
+			aa.IMAGEYEARSNAME,
+			bb.IMAGESTATENAME,
+			cc.CITY_NAME cityName,
+			cc.TOWN_NAME townName,
+			
+			addr.ADDRESSNO,
+			addr.GOOGLEMAPMARKX,
+			addr.GOOGLEMAPMARKY,
+			ADDRESSNAME,
+			ADDRESS1,
+			ADDRESS2,
+			ADDRESS3,
+			ADDRESS4,
+			ADDRESS5,
+			POSTMAIL,
+			ADDRESSCONTENT,
+			
+			IMAGERESOOLD,
+			IMAGERESONEW,
+			IMAGE,
+			IMAGEYEARS,
+			IMAGECONTENT,
+			IMAGESTATE,
+			
+			im.ADDRESSNO mapid,
+			im.IMAGENO REGISTERNOIMAGE,
+			im.REC_INS_TS recInsTs,
+			im.REC_UPD_TS recUpdTs
+		FROM TB_ADDRESSINFO addr INNER JOIN TB_PHOTOINFO im ON  
+		addr.ADDRESSNO = im.ADDRESSNO
+		
+		INNER JOIN TB_PHOTOYEAR aa ON aa.IMAGEYEARSCD = im.IMAGEYEARS
+		INNER JOIN TB_PHOTOSTATE bb ON bb.IMAGESTATECD = im.IMAGESTATE
+		INNER JOIN ad_address cc ON cc.town_id = addr.ADDRESS2
+		
+		<where>
+			<if test="addressname != null and addressname != ''">and ADDRESSNAME like concat('%', #{addressname}, '%') </if>
+			<if test="addressno != null and addressno != ''">and ADDRESSNO = #{addressno} </if>
+			<if test="address2 != null and address2 != ''">and ADDRESS2 = #{address2} </if>
+			<if test="address3 != null and address3 != ''">and ADDRESS3 = #{address3} </if>
+			<if test="address4 != null and address4 != ''">and ADDRESS4 = #{address4} </if>
+			<if test="address5 != null and address5 != ''">and ADDRESS5 = #{address5} </if>
+			<if test="postmail != null and postmail != ''">and POSTMAIL = #{postmail} </if>
+			<if test="addresscontent != null and addresscontent != ''">and ADDRESSCONTENT = #{addresscontent} </if>
+			<if test="imageresoold != null and imageresoold != ''">and IMAGERESOOLD = #{imageresoold} </if>
+			<if test="imageresonew != null and imageresonew != ''">and IMAGERESONEW = #{imageresonew} </if>
+			<if test="image != null and image != ''">and IMAGE like concat('%', #{image}, '%') </if>
+			<if test="imageyears != null and imageyears != ''">and IMAGEYEARS = #{imageyears} </if>
+			<if test="imagecontent != null and imagecontent != ''">and IMAGECONTENT = #{imagecontent} </if>
+			and bb.IMAGESTATENAME = '公開済'
+		</where>
+	</select>
+	
+</mapper>

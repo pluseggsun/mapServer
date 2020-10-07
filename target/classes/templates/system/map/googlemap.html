@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org" >
+<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <title>今昔マップ</title>
+    <style type="text/css">
+    
+    html{
+       height:100%
+    }
+    body{
+       height:100%;
+    }
+    
+    </style>
+    <div th:include="include :: footer"></div>
+	<script type="text/javascript">
+	function loadImg(){
+		$.ajax({
+			url : '/sys/listall',
+			success : function(data) {
+				//加载数据
+				debugger;
+				loadDatas(data);
+			}
+		});
+	}
+	
+	 function loadDatas(data){ // 読み込んだCSVデータが文字列として渡される
+	    var result = []; // 最終的な二次元配列を入れるための配列
+	    // 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
+	    debugger;
+	    for(var i = 0; i < data.length; i++){
+            var myLatlng = new google.maps.LatLng(data[i].ycoordinates,data[i].xcoordinates);
+			marker[i] = new google.maps.Marker({
+			       position: myLatlng,
+			       map: map,
+// 			       title: data[i].id,
+			       title: '1111',
+                   icon: {
+	            	 url: '/upload/images/' + data[i].image,
+	            	 scaledSize : new google.maps.Size(60, 40)
+			       }
+			});
+            //クリックしたら指定したurlに遷移するイベント
+//             var seturl = 'detail/' + data[i].tohtml;
+// 	        google.maps.event.addListener(marker[i], 'click', (function(url){
+// 	            return function(){ window.open(url, '_blank'); };
+// 	        })(seturl));
+	    }
+      }
+	</script>
+	
+  </head>
+  <body>
+    <p>今昔マップ</p>
+    <div id="map" style="width:100%; max-width:100%; height:100%;"></div>
+    <script type="text/javascript">
+      var map;
+      var marker = [];
+      var infoWindow = [];
+      function initMap() {
+        loadImg();
+        var opts = {
+          zoom: 17,
+          center: new google.maps.LatLng(35.703215,139.579418)
+        };
+        map = new google.maps.Map(document.getElementById("map"), opts);
+      }
+
+      // 読み込んだCSVデータを二次元配列に変換する関数convertCSVtoArray()の定義
+      function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列として渡される
+	    var result = []; // 最終的な二次元配列を入れるための配列
+	    var tmp = str.split("\n"); // 改行を区切り文字として行を要素とした配列を生成
+	 
+	    // 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
+	    for(var i=0;i<tmp.length;++i){
+	        result[i] = tmp[i].split(',');
+            var myLatlng = new google.maps.LatLng(result[i][3],result[i][4]);
+			marker[i] = new google.maps.Marker({
+			       position: myLatlng,
+			       map: map,
+			       title: result[i][0],
+	                       icon: {
+			            url: 'images/' + result[i][6],
+			            scaledSize : new google.maps.Size(60, 40)
+			       }
+			});
+            //クリックしたら指定したurlに遷移するイベント
+            var seturl = 'detail/' + result[i][5];
+	        google.maps.event.addListener(marker[i], 'click', (function(url){
+	            return function(){ window.open(url, '_blank'); };
+	        })(seturl));
+	    }
+      }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlXHouTLI-TcTM2CGqOQH0pYIW1RNWnb8&callback=initMap">
+    </script>
+  </body>
+</html>

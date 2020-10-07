@@ -1,0 +1,97 @@
+.layer-switcher.shown.ol-control {
+    background-color: transparent;
+}
+
+.layer-switcher.shown.ol-control:hover {
+    background-color: transparent;
+}
+
+.layer-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: left;
+    z-index:1000; 
+}
+
+.layer-switcher.shown {
+    bottom: 3em;
+}
+
+.layer-switcher .panel {
+    padding: 0 1em 0 0;
+    margin: 0;
+    border: 4px solid #eee;
+    border-radius: 4px;
+    background-color: white;
+    display: none;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.layer-switcher.shown .panel {
+    display: block;
+}
+
+.layer-switcher button {
+    float: right;
+    width: 38px;
+    height: 38px;
+    background-image: url('data:image/png;base64,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') /*logo.png*/;
+    background-repeat: no-repeat;
+    background-position: 2px;
+    background-color: white;
+    border: none;
+}
+
+.layer-switcher.shown button {
+    display: none;
+}
+
+.layer-switcher button:focus, .layer-switcher button:hover {
+    background-color: white;
+}
+
+.layer-switcher ul {
+    padding-left: 1em;
+    list-style: none;
+}
+
+.layer-switcher li.group {
+    padding-top: 5px;
+}
+
+.layer-switcher li.group > label {
+    font-weight: bold;
+}
+
+.layer-switcher li.layer {
+    display: table;
+}
+
+.layer-switcher li.layer label, .layer-switcher li.layer input {
+    display: table-cell;
+    vertical-align: sub;
+}
+
+.layer-switcher label.disabled {
+    opacity:0.4;
+}
+
+.layer-switcher input {
+    margin: 4px;
+}
+
+.layer-switcher.touch ::-webkit-scrollbar {
+    width: 4px;
+}
+
+.layer-switcher.touch ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.layer-switcher.touch ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}

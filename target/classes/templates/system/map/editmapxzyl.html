@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+<meta charset="utf-8">
+<head th:include="include :: header_with_param(~{::link})">
+    <link rel="stylesheet" th:href="@{/css/plugins/openlayers/ol.css}" type="text/css">
+ 	<link href="/css/fileup/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
+ 
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content ">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                	<form class="form-horizontal m-t" id="signupForm" enctype="multipart/form-data">
+                                <input id="addressno" name="addressno" th:value="${dict.addressno}" class="form-control" type="hidden" >
+                                <input id="registernoimage" name="registernoimage" th:value="${dict.registernoimage}" class="form-control" type="hidden" >
+                                
+				        <div class="form-group">
+                            <label class="col-sm-3 control-label">住所：</label>
+                            <div class="col-sm-8">
+                                <input id="address" name="address" th:value="${address}" readonly class="form-control readonly" type="text" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">住所名称：</label>
+                            <div class="col-sm-8">
+                                <input id="addressname" name="addressname" th:value="${dict.addressname}" 
+                                data-bv-stringlength="true" 
+                                data-bv-stringlength-max="20" data-bv-stringlength-message="２０文字以下で入力してください。"
+                                class="form-control" type="text">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">住所説明：</label>
+                            <div class="col-sm-8">
+                                <textarea id="addresscontent" name="addresscontent" th:text="${dict.addresscontent}" rows="5" class="form-control" 
+                                data-bv-stringlength="true" 
+                                data-bv-stringlength-max="2000" data-bv-stringlength-message="２０００文字以下で入力してください。" ></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">GoogleMap座標X：</label>
+                            <div class="col-sm-3" style="width: 160px">
+                                <input id="googlemapmarkx" name="googlemapmarkx" th:value="${dict.googlemapmarkx}" 
+                                data-bv-numeric="true" data-bv-numeric-message="16数字以下で入力してください。"
+                                data-bv-stringlength="true" 
+                                data-bv-stringlength-max="16" data-bv-stringlength-message="16数字以下で入力してください。"  class="form-control" type="text">
+                            </div>
+                            
+                            <label class="col-sm-2 control-label">GoogleMap座標Y：</label>
+                            <div class="col-sm-3" style="width: 160px">
+                                <input id="googlemapmarky" name="googlemapmarky" th:value="${dict.googlemapmarky}" 
+                                data-bv-numeric="true" data-bv-numeric-message="16数字以下で入力してください。"
+                                data-bv-stringlength="true" 
+                                data-bv-stringlength-max="16" data-bv-stringlength-message="16数字以下で入力してください。"  class="form-control" type="text">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-sm-8">
+                                <button type="submit" class="btn btn-primary">確定</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:include="include::footer"></div>
+
+<script src="/js/fileup/fileinput.js" type="text/javascript"></script>
+<script src="/js/fileup/locales/ja.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+var image = '[[${image}]]';
+
+var address1 = '[[${dict.address1}]]';
+var address2 = '[[${dict.address2}]]';
+var imageyears = '[[${dict.imageyears}]]';
+var imagestate = '[[${dict.imagestate}]]';
+
+/*]]>*/
+
+$(function () {
+	$('#signupForm').bootstrapValidator().on('success.form.bv', function (e) { e.preventDefault(); });
+});
+
+</script>
+<!-- <script type="text/javascript" src="/js/appjs/system/map/editxzyl.js"></script> -->
+
+<script type="text/javascript">
+$().ready(function () {
+    validateRule();
+});
+
+$.validator.setDefaults({
+    submitHandler: function () {
+    	updatemap();
+    }
+});
+
+function validateRule() {
+    var icon = "<i class='fa fa-times-circle'></i> ";
+    $("#signupForm").validate({
+    })
+}
+
+
+
+function updatemap() {
+	if($("#addressno").val() == ""){
+        parent.layer.alert("addressno Connection error");
+        return false;
+	}
+	
+	if($("#registernoimage").val() == ""){
+        parent.layer.alert("registernoimage Connection error");
+        return false;
+	}
+	var formData = new FormData();
+
+    formData.append("addressno", $("#addressno").val());//x
+    formData.append("registernoimage", $("#registernoimage").val());//y
+    
+    formData.append("googlemapmarkx", $("#googlemapmarkx").val());//x
+    formData.append("googlemapmarky", $("#googlemapmarky").val());//y
+//    formData.append("imagenameold", $("#imagenameold").val());//写真名（旧）
+//    formData.append("imagenamenew", $("#imagenamenew").val());//写真名（新）
+//    formData.append("imageresoold", $("#imageresoold").val());//写真サイズ（原）
+//    formData.append("imageresonew", $("#imageresonew").val());//写真サイズ（新
+//    formData.append("imageyears", $("#imageyears").val());//写真年代
+//    formData.append("imagecontent", $("#imagecontent").val());//写真説明
+//    formData.append("imagestate", $("#imagestate").val());//写真状態
+//    formData.append("address1", $("#address1").val());//住所
+//    formData.append("address2", $("#address2").val());//住所
+//    formData.append("address3", $("#address3").val());//住所
+//    formData.append("address4", $("#address4").val());//住所
+//    formData.append("address5", $("#address5").val());//住所
+//    formData.append("postmail", $("#postmail").val());//郵便番号
+    formData.append("addressname", $("#addressname").val());//住所名称
+    formData.append("addresscontent", $("#addresscontent").val());//住所説明
+
+//    var fileLength = document.getElementById('file').files.length;
+//    for(i =0 ; i < fileLength; i++){
+//        formData.append('file', document.getElementById('file').files[i]);
+//    }
+    
+    $.ajax({
+    	type: "POST",
+        async:false,//同步请求
+        processData: false,// 不处理发送的数据
+        contentType: false,// 不设置Content-Type请求头
+        dataType: "json",
+        url: "/sys/updateaddr",
+        data: formData,// 你的formid
+        error: function (request) {
+            parent.layer.alert("変更してください。");
+        },
+        success: function (data) {
+            if (data.code == 0) {
+                parent.layer.msg("登録処理を完了しました");
+                parent.reLoad();
+                var index = parent.layer.getFrameIndex(window.name); // 获取窗口索引
+                parent.layer.close(index);
+
+            } else {
+                parent.layer.alert("登録処理を完了しました")
+            }
+
+        }
+    });
+
+}
+</script>
+</body>
+</html>

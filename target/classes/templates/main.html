@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro" lang="en">
+<meta charset="utf-8">
+<head th:replace="include :: header_with_param(~{::link})">
+	<link rel="stylesheet" th:src="@{/css/appcss/map/query.css}" href="/css/plugins/openlayers/ol.css" type="text/css">
+	<link rel="stylesheet" th:src="@{/css/appcss/map/query.css}" href="/css/plugins/openlayers/ol3-layerswitcher.css" type="text/css">
+	<link rel="stylesheet" th:src="@{/css/appcss/map/query.css}" href="/css/appcss/main.css" type="text/css">
+</head> 
+
+<body class="gray-bg">
+	<div class="row">
+		<div class="col-md-12">
+		</div>
+	</div>
+	<div th:include="include::footer"></div>
+	<script th:inline="javascript">
+		const tileUrl = /*[[${tileUrl}]]*/ '';
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,753 @@
+2020-09-06 08:15:57 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h55m14s953ms739µs773ns).
+2020-09-06 08:31:45 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@69677674 (No operations allowed after connection closed.)
+2020-09-06 08:31:45 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@3242c1e2 (No operations allowed after connection closed.)
+2020-09-06 08:31:45 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@ecc305b (No operations allowed after connection closed.)
+2020-09-06 08:31:50 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@235ca7bb (No operations allowed after connection closed.)
+2020-09-06 08:31:51 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@7a752016 (No operations allowed after connection closed.)
+2020-09-06 08:31:51 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@7c2e7c0b (No operations allowed after connection closed.)
+2020-09-06 08:31:55 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@4447c522 (No operations allowed after connection closed.)
+2020-09-06 08:31:56 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@6ef5747e (No operations allowed after connection closed.)
+2020-09-06 08:31:56 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@62d13c7d (No operations allowed after connection closed.)
+2020-09-06 08:31:56 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@2419aef8 (No operations allowed after connection closed.)
+2020-09-06 08:44:33 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@19b6dc98 (No operations allowed after connection closed.)
+2020-09-06 08:44:33 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@65b8a686 (No operations allowed after connection closed.)
+2020-09-06 08:44:33 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@75456e71 (No operations allowed after connection closed.)
+2020-09-06 08:44:38 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@524fb26e (No operations allowed after connection closed.)
+2020-09-06 08:44:38 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@4cef49c5 (No operations allowed after connection closed.)
+2020-09-06 08:44:38 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@6705c8ef (No operations allowed after connection closed.)
+2020-09-06 08:44:40 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@3d596b00 (No operations allowed after connection closed.)
+2020-09-06 08:44:40 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@437d5e7 (No operations allowed after connection closed.)
+2020-09-06 08:44:40 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@5b8647c0 (No operations allowed after connection closed.)
+2020-09-06 08:44:43 -HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@595e7e08 (No operations allowed after connection closed.)
+2020-09-06 08:46:33 -Starting BootdoApplication on DESKTOP-M8PQO5R with PID 10032 (D:\AAAprivate\mapServer\target\classes started by Administrator in D:\AAAprivate\mapServer)
+2020-09-06 08:46:33 -The following profiles are active: dev
+2020-09-06 08:46:33 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d55fb0e: startup date [Sun Sep 06 08:46:33 CST 2020]; root of context hierarchy
+2020-09-06 08:46:36 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-06 08:46:37 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$da225ac4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-06 08:46:39 -Tomcat initialized with port(s): 9991 (http)
+2020-09-06 08:46:39 -Initializing ProtocolHandler ["http-nio-9991"]
+2020-09-06 08:46:39 -Starting service [Tomcat]
+2020-09-06 08:46:39 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-06 08:46:39 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_161\BIN;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;D:\ZtWork\MariaDB 10.2\bin;C:\Program Files\Bandizip\;D:\ZtWork\MariaDB 10.2\bin;;D:\eclipse_64\eclipse;;.]
+2020-09-06 08:46:39 -Initializing Spring embedded WebApplicationContext
+2020-09-06 08:46:39 -Root WebApplicationContext: initialization completed in 5961 ms
+2020-09-06 08:46:39 -Servlet dispatcherServlet mapped to [/]
+2020-09-06 08:46:39 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-06 08:46:39 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-06 08:46:39 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-06 08:46:39 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-06 08:46:41 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 08:46:42 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d55fb0e: startup date [Sun Sep 06 08:46:33 CST 2020]; root of context hierarchy
+2020-09-06 08:46:42 -Mapped "{[/base/getcityinfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getCityInfo(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 08:46:42 -Mapped "{[/base/getimagecode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getImageCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 08:46:42 -Mapped "{[/base/getstatuscode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getStatusCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 08:46:42 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-06 08:46:42 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-06 08:46:42 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-06 08:46:42 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-06 08:46:42 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-06 08:46:42 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-06 08:46:42 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-06 08:46:42 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 08:46:42 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 08:46:42 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 08:46:42 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-06 08:46:42 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.ImageAddressDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 08:46:42 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 08:46:42 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 08:46:42 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-06 08:46:42 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-06 08:46:42 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 08:46:42 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 08:46:42 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-06 08:46:44 -HikariPool-1 - Starting...
+2020-09-06 08:46:45 -HikariPool-1 - Start completed.
+2020-09-06 08:46:45 -Using default implementation for ThreadExecutor
+2020-09-06 08:46:45 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-06 08:46:45 -Quartz Scheduler v.2.2.1 created.
+2020-09-06 08:46:45 -RAMJobStore initialized.
+2020-09-06 08:46:45 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-06 08:46:45 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-06 08:46:45 -Quartz scheduler version: 2.2.1
+2020-09-06 08:46:45 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@50a11
+2020-09-06 08:46:46 -LiveReload server is running on port 35729
+2020-09-06 08:46:47 -Registering beans for JMX exposure on startup
+2020-09-06 08:46:47 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-06 08:46:47 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-06 08:46:47 -Starting beans in phase 2147483647
+2020-09-06 08:46:47 -Starting Quartz Scheduler now
+2020-09-06 08:46:47 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-06 08:46:47 -Starting ProtocolHandler ["http-nio-9991"]
+2020-09-06 08:46:47 -Using a shared selector for servlet write/read
+2020-09-06 08:46:47 -Tomcat started on port(s): 9991 (http) with context path ''
+2020-09-06 08:46:47 -Started BootdoApplication in 15.129 seconds (JVM running for 16.418)
+2020-09-06 08:46:59 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-06 08:46:59 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-06 08:47:00 -FrameworkServlet 'dispatcherServlet': initialization completed in 133 ms
+2020-09-06 11:45:54 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h41m8s800ms943µs149ns).
+2020-09-06 11:55:43 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m18s835ms900µs899ns).
+2020-09-06 12:10:37 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m23s939ms243µs146ns).
+2020-09-06 12:24:25 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m18s96ms781µs602ns).
+2020-09-06 12:30:14 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m18s761ms779µs846ns).
+2020-09-06 13:24:19 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51m35s722ms722µs601ns).
+2020-09-06 14:01:18 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m58s487ms789µs827ns).
+2020-09-06 14:02:59 -Starting BootdoApplication on DESKTOP-M8PQO5R with PID 16688 (D:\AAAprivate\mapServer\target\classes started by Administrator in D:\AAAprivate\mapServer)
+2020-09-06 14:02:59 -The following profiles are active: dev
+2020-09-06 14:02:59 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30e9bfed: startup date [Sun Sep 06 14:02:59 CST 2020]; root of context hierarchy
+2020-09-06 14:03:02 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-06 14:03:04 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e62816a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-06 14:03:05 -Tomcat initialized with port(s): 9991 (http)
+2020-09-06 14:03:05 -Initializing ProtocolHandler ["http-nio-9991"]
+2020-09-06 14:03:05 -Starting service [Tomcat]
+2020-09-06 14:03:05 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-06 14:03:05 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_161\BIN;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;D:\ZtWork\MariaDB 10.2\bin;C:\Program Files\Bandizip\;D:\ZtWork\MariaDB 10.2\bin;;D:\eclipse_64\eclipse;;.]
+2020-09-06 14:03:05 -Initializing Spring embedded WebApplicationContext
+2020-09-06 14:03:05 -Root WebApplicationContext: initialization completed in 5791 ms
+2020-09-06 14:03:06 -Servlet dispatcherServlet mapped to [/]
+2020-09-06 14:03:06 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-06 14:03:06 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-06 14:03:06 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-06 14:03:06 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-06 14:03:07 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 14:03:08 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30e9bfed: startup date [Sun Sep 06 14:02:59 CST 2020]; root of context hierarchy
+2020-09-06 14:03:08 -Mapped "{[/base/getcityinfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getCityInfo(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 14:03:08 -Mapped "{[/base/getimagecode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getImageCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 14:03:08 -Mapped "{[/base/getstatuscode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getStatusCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 14:03:08 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-06 14:03:08 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-06 14:03:08 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-06 14:03:08 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-06 14:03:08 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-06 14:03:08 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-06 14:03:08 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-06 14:03:08 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 14:03:08 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 14:03:08 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 14:03:08 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.ImageAddressDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 14:03:08 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 14:03:08 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 14:03:08 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-06 14:03:08 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-06 14:03:08 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-06 14:03:08 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 14:03:08 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 14:03:09 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-06 14:03:11 -HikariPool-1 - Starting...
+2020-09-06 14:03:11 -HikariPool-1 - Start completed.
+2020-09-06 14:03:12 -Using default implementation for ThreadExecutor
+2020-09-06 14:03:12 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-06 14:03:12 -Quartz Scheduler v.2.2.1 created.
+2020-09-06 14:03:12 -RAMJobStore initialized.
+2020-09-06 14:03:12 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-06 14:03:12 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-06 14:03:12 -Quartz scheduler version: 2.2.1
+2020-09-06 14:03:12 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@70ab80a6
+2020-09-06 14:03:13 -LiveReload server is running on port 35729
+2020-09-06 14:03:13 -Registering beans for JMX exposure on startup
+2020-09-06 14:03:13 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-06 14:03:13 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-06 14:03:13 -Starting beans in phase 2147483647
+2020-09-06 14:03:13 -Starting Quartz Scheduler now
+2020-09-06 14:03:13 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-06 14:03:13 -Starting ProtocolHandler ["http-nio-9991"]
+2020-09-06 14:03:13 -Using a shared selector for servlet write/read
+2020-09-06 14:03:13 -Tomcat started on port(s): 9991 (http) with context path ''
+2020-09-06 14:03:13 -Started BootdoApplication in 14.944 seconds (JVM running for 16.389)
+2020-09-06 14:03:41 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-06 14:03:41 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-06 14:03:41 -FrameworkServlet 'dispatcherServlet': initialization completed in 83 ms
+2020-09-06 14:35:24 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30e9bfed: startup date [Sun Sep 06 14:02:59 CST 2020]; root of context hierarchy
+2020-09-06 14:35:24 -Stopping beans in phase 2147483647
+2020-09-06 14:35:24 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-06 14:35:24 -Shutting down Quartz Scheduler
+2020-09-06 14:35:24 -Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-06 14:35:24 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-06 14:35:24 -Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-06 14:35:24 -Unregistering JMX-exposed beans on shutdown
+2020-09-06 14:35:24 -Unregistering JMX-exposed beans
+2020-09-06 14:35:24 -HikariPool-1 - Shutdown initiated...
+2020-09-06 14:35:24 -HikariPool-1 - Shutdown completed.
+2020-09-06 14:35:25 -Starting BootdoApplication on DESKTOP-M8PQO5R with PID 16688 (D:\AAAprivate\mapServer\target\classes started by Administrator in D:\AAAprivate\mapServer)
+2020-09-06 14:35:25 -The following profiles are active: dev
+2020-09-06 14:35:25 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17cad022: startup date [Sun Sep 06 14:35:25 CST 2020]; root of context hierarchy
+2020-09-06 14:37:20 -Starting BootdoApplication on DESKTOP-M8PQO5R with PID 13376 (D:\AAAprivate\mapServer\target\classes started by Administrator in D:\AAAprivate\mapServer)
+2020-09-06 14:37:20 -The following profiles are active: dev
+2020-09-06 14:37:20 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fa7175e: startup date [Sun Sep 06 14:37:20 CST 2020]; root of context hierarchy
+2020-09-06 14:37:23 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-06 14:37:24 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$244bb39b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-06 14:37:26 -Tomcat initialized with port(s): 9991 (http)
+2020-09-06 14:37:26 -Initializing ProtocolHandler ["http-nio-9991"]
+2020-09-06 14:37:26 -Starting service [Tomcat]
+2020-09-06 14:37:26 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-06 14:37:26 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_161\BIN;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;D:\ZtWork\MariaDB 10.2\bin;C:\Program Files\Bandizip\;D:\ZtWork\MariaDB 10.2\bin;;D:\eclipse_64\eclipse;;.]
+2020-09-06 14:37:26 -Initializing Spring embedded WebApplicationContext
+2020-09-06 14:37:26 -Root WebApplicationContext: initialization completed in 5405 ms
+2020-09-06 14:37:26 -Servlet dispatcherServlet mapped to [/]
+2020-09-06 14:37:26 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-06 14:37:26 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-06 14:37:26 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-06 14:37:26 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-06 14:37:28 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 14:37:28 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fa7175e: startup date [Sun Sep 06 14:37:20 CST 2020]; root of context hierarchy
+2020-09-06 14:37:29 -Mapped "{[/base/getstatuscode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getStatusCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 14:37:29 -Mapped "{[/base/getimagecode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getImageCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 14:37:29 -Mapped "{[/base/getcityinfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getCityInfo(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 14:37:29 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-06 14:37:29 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-06 14:37:29 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-06 14:37:29 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-06 14:37:29 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-06 14:37:29 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-06 14:37:29 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-06 14:37:29 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 14:37:29 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 14:37:29 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 14:37:29 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.ImageAddressDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 14:37:29 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 14:37:29 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 14:37:29 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-06 14:37:29 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-06 14:37:29 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-06 14:37:29 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 14:37:29 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 14:37:29 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-06 14:37:30 -HikariPool-1 - Starting...
+2020-09-06 14:37:31 -HikariPool-1 - Start completed.
+2020-09-06 14:37:31 -Using default implementation for ThreadExecutor
+2020-09-06 14:37:31 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-06 14:37:31 -Quartz Scheduler v.2.2.1 created.
+2020-09-06 14:37:31 -RAMJobStore initialized.
+2020-09-06 14:37:31 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-06 14:37:31 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-06 14:37:31 -Quartz scheduler version: 2.2.1
+2020-09-06 14:37:31 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@217f3880
+2020-09-06 14:37:32 -LiveReload server is running on port 35729
+2020-09-06 14:37:32 -Registering beans for JMX exposure on startup
+2020-09-06 14:37:32 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-06 14:37:32 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-06 14:37:32 -Starting beans in phase 2147483647
+2020-09-06 14:37:32 -Starting Quartz Scheduler now
+2020-09-06 14:37:32 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-06 14:37:32 -Starting ProtocolHandler ["http-nio-9991"]
+2020-09-06 14:37:32 -Using a shared selector for servlet write/read
+2020-09-06 14:37:32 -Tomcat started on port(s): 9991 (http) with context path ''
+2020-09-06 14:37:32 -Started BootdoApplication in 13.355 seconds (JVM running for 14.75)
+2020-09-06 14:37:50 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-06 14:37:50 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-06 14:37:50 -FrameworkServlet 'dispatcherServlet': initialization completed in 73 ms
+2020-09-06 14:56:56 -Resolved exception caused by Handler execution: org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors
+Field error in object 'imageAddressDO' on field 'registerno': rejected value [undefined]; codes [typeMismatch.imageAddressDO.registerno,typeMismatch.registerno,typeMismatch.java.lang.Long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [imageAddressDO.registerno,registerno]; arguments []; default message [registerno]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Long' for property 'registerno'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+Field error in object 'imageAddressDO' on field 'registernoimage': rejected value [undefined]; codes [typeMismatch.imageAddressDO.registernoimage,typeMismatch.registernoimage,typeMismatch.java.lang.Long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [imageAddressDO.registernoimage,registernoimage]; arguments []; default message [registernoimage]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Long' for property 'registernoimage'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-09-06 14:57:08 -Resolved exception caused by Handler execution: org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors
+Field error in object 'imageAddressDO' on field 'registerno': rejected value [undefined]; codes [typeMismatch.imageAddressDO.registerno,typeMismatch.registerno,typeMismatch.java.lang.Long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [imageAddressDO.registerno,registerno]; arguments []; default message [registerno]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Long' for property 'registerno'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+Field error in object 'imageAddressDO' on field 'registernoimage': rejected value [undefined]; codes [typeMismatch.imageAddressDO.registernoimage,typeMismatch.registernoimage,typeMismatch.java.lang.Long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [imageAddressDO.registernoimage,registernoimage]; arguments []; default message [registernoimage]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Long' for property 'registernoimage'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-09-06 14:57:19 -Resolved exception caused by Handler execution: org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors
+Field error in object 'imageAddressDO' on field 'registerno': rejected value [undefined]; codes [typeMismatch.imageAddressDO.registerno,typeMismatch.registerno,typeMismatch.java.lang.Long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [imageAddressDO.registerno,registerno]; arguments []; default message [registerno]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Long' for property 'registerno'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+Field error in object 'imageAddressDO' on field 'registernoimage': rejected value [undefined]; codes [typeMismatch.imageAddressDO.registernoimage,typeMismatch.registernoimage,typeMismatch.java.lang.Long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [imageAddressDO.registernoimage,registernoimage]; arguments []; default message [registernoimage]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Long' for property 'registernoimage'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-09-06 14:57:55 -Resolved exception caused by Handler execution: org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors
+Field error in object 'imageAddressDO' on field 'registerno': rejected value [undefined]; codes [typeMismatch.imageAddressDO.registerno,typeMismatch.registerno,typeMismatch.java.lang.Long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [imageAddressDO.registerno,registerno]; arguments []; default message [registerno]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Long' for property 'registerno'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+Field error in object 'imageAddressDO' on field 'registernoimage': rejected value [undefined]; codes [typeMismatch.imageAddressDO.registernoimage,typeMismatch.registernoimage,typeMismatch.java.lang.Long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [imageAddressDO.registernoimage,registernoimage]; arguments []; default message [registernoimage]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Long' for property 'registernoimage'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-09-06 14:58:33 -Resolved exception caused by Handler execution: org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors
+Field error in object 'imageAddressDO' on field 'registerno': rejected value [undefined]; codes [typeMismatch.imageAddressDO.registerno,typeMismatch.registerno,typeMismatch.java.lang.Long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [imageAddressDO.registerno,registerno]; arguments []; default message [registerno]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Long' for property 'registerno'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+Field error in object 'imageAddressDO' on field 'registernoimage': rejected value [undefined]; codes [typeMismatch.imageAddressDO.registernoimage,typeMismatch.registernoimage,typeMismatch.java.lang.Long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [imageAddressDO.registernoimage,registernoimage]; arguments []; default message [registernoimage]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Long' for property 'registernoimage'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-09-06 14:58:39 -Resolved exception caused by Handler execution: org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors
+Field error in object 'imageAddressDO' on field 'registerno': rejected value [undefined]; codes [typeMismatch.imageAddressDO.registerno,typeMismatch.registerno,typeMismatch.java.lang.Long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [imageAddressDO.registerno,registerno]; arguments []; default message [registerno]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Long' for property 'registerno'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+Field error in object 'imageAddressDO' on field 'registernoimage': rejected value [undefined]; codes [typeMismatch.imageAddressDO.registernoimage,typeMismatch.registernoimage,typeMismatch.java.lang.Long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [imageAddressDO.registernoimage,registernoimage]; arguments []; default message [registernoimage]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Long' for property 'registernoimage'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-09-06 15:11:56 -Starting BootdoApplication on DESKTOP-M8PQO5R with PID 13396 (D:\AAAprivate\mapServer\target\classes started by Administrator in D:\AAAprivate\mapServer)
+2020-09-06 15:11:56 -The following profiles are active: dev
+2020-09-06 15:11:57 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20c76b39: startup date [Sun Sep 06 15:11:57 CST 2020]; root of context hierarchy
+2020-09-06 15:11:59 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-06 15:12:01 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e14f807] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-06 15:12:02 -Tomcat initialized with port(s): 9991 (http)
+2020-09-06 15:12:02 -Initializing ProtocolHandler ["http-nio-9991"]
+2020-09-06 15:12:02 -Starting service [Tomcat]
+2020-09-06 15:12:02 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-06 15:12:02 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_161\BIN;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;D:\ZtWork\MariaDB 10.2\bin;C:\Program Files\Bandizip\;D:\ZtWork\MariaDB 10.2\bin;;D:\eclipse_64\eclipse;;.]
+2020-09-06 15:12:02 -Initializing Spring embedded WebApplicationContext
+2020-09-06 15:12:02 -Root WebApplicationContext: initialization completed in 5437 ms
+2020-09-06 15:12:02 -Servlet dispatcherServlet mapped to [/]
+2020-09-06 15:12:02 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-06 15:12:02 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-06 15:12:02 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-06 15:12:02 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-06 15:12:04 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 15:12:05 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20c76b39: startup date [Sun Sep 06 15:11:57 CST 2020]; root of context hierarchy
+2020-09-06 15:12:05 -Mapped "{[/base/getcityinfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getCityInfo(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 15:12:05 -Mapped "{[/base/getstatuscode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getStatusCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 15:12:05 -Mapped "{[/base/getimagecode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getImageCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 15:12:05 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-06 15:12:05 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-06 15:12:05 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-06 15:12:05 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-06 15:12:05 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-06 15:12:05 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-06 15:12:05 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-06 15:12:05 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 15:12:05 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 15:12:05 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 15:12:05 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 15:12:05 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 15:12:05 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.ImageAddressDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 15:12:05 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-06 15:12:05 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-06 15:12:05 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-06 15:12:05 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 15:12:05 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 15:12:05 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-06 15:12:06 -HikariPool-1 - Starting...
+2020-09-06 15:12:07 -HikariPool-1 - Start completed.
+2020-09-06 15:12:07 -Using default implementation for ThreadExecutor
+2020-09-06 15:12:07 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-06 15:12:07 -Quartz Scheduler v.2.2.1 created.
+2020-09-06 15:12:07 -RAMJobStore initialized.
+2020-09-06 15:12:07 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-06 15:12:07 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-06 15:12:07 -Quartz scheduler version: 2.2.1
+2020-09-06 15:12:07 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@42cca37c
+2020-09-06 15:12:08 -LiveReload server is running on port 35729
+2020-09-06 15:12:09 -Registering beans for JMX exposure on startup
+2020-09-06 15:12:09 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-06 15:12:09 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-06 15:12:09 -Starting beans in phase 2147483647
+2020-09-06 15:12:09 -Starting Quartz Scheduler now
+2020-09-06 15:12:09 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-06 15:12:09 -Starting ProtocolHandler ["http-nio-9991"]
+2020-09-06 15:12:09 -Using a shared selector for servlet write/read
+2020-09-06 15:12:09 -Tomcat started on port(s): 9991 (http) with context path ''
+2020-09-06 15:12:09 -Started BootdoApplication in 13.544 seconds (JVM running for 14.776)
+2020-09-06 15:12:49 -Starting BootdoApplication on DESKTOP-M8PQO5R with PID 16628 (D:\AAAprivate\mapServer\target\classes started by Administrator in D:\AAAprivate\mapServer)
+2020-09-06 15:12:49 -The following profiles are active: dev
+2020-09-06 15:12:50 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64bfd922: startup date [Sun Sep 06 15:12:50 CST 2020]; root of context hierarchy
+2020-09-06 15:12:52 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-06 15:12:54 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30451bda] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-06 15:12:55 -Tomcat initialized with port(s): 9991 (http)
+2020-09-06 15:12:55 -Initializing ProtocolHandler ["http-nio-9991"]
+2020-09-06 15:12:55 -Starting service [Tomcat]
+2020-09-06 15:12:55 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-06 15:12:55 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_161\BIN;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;D:\ZtWork\MariaDB 10.2\bin;C:\Program Files\Bandizip\;D:\ZtWork\MariaDB 10.2\bin;;D:\eclipse_64\eclipse;;.]
+2020-09-06 15:12:55 -Initializing Spring embedded WebApplicationContext
+2020-09-06 15:12:55 -Root WebApplicationContext: initialization completed in 5569 ms
+2020-09-06 15:12:56 -Servlet dispatcherServlet mapped to [/]
+2020-09-06 15:12:56 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-06 15:12:56 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-06 15:12:56 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-06 15:12:56 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-06 15:12:58 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 15:12:59 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64bfd922: startup date [Sun Sep 06 15:12:50 CST 2020]; root of context hierarchy
+2020-09-06 15:12:59 -Mapped "{[/base/getcityinfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getCityInfo(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 15:12:59 -Mapped "{[/base/getimagecode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getImageCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 15:12:59 -Mapped "{[/base/getstatuscode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getStatusCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 15:12:59 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-06 15:12:59 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-06 15:12:59 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-06 15:12:59 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-06 15:12:59 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-06 15:12:59 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-06 15:12:59 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-06 15:12:59 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 15:12:59 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 15:12:59 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 15:12:59 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 15:12:59 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 15:12:59 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.ImageAddressDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 15:12:59 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-06 15:12:59 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-06 15:12:59 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-06 15:12:59 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 15:12:59 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 15:12:59 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-06 15:13:01 -HikariPool-1 - Starting...
+2020-09-06 15:13:02 -HikariPool-1 - Start completed.
+2020-09-06 15:13:02 -Using default implementation for ThreadExecutor
+2020-09-06 15:13:02 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-06 15:13:02 -Quartz Scheduler v.2.2.1 created.
+2020-09-06 15:13:02 -RAMJobStore initialized.
+2020-09-06 15:13:02 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-06 15:13:02 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-06 15:13:02 -Quartz scheduler version: 2.2.1
+2020-09-06 15:13:02 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@a040f87
+2020-09-06 15:13:03 -LiveReload server is running on port 35729
+2020-09-06 15:13:03 -Registering beans for JMX exposure on startup
+2020-09-06 15:13:03 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-06 15:13:03 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-06 15:13:03 -Starting beans in phase 2147483647
+2020-09-06 15:13:03 -Starting Quartz Scheduler now
+2020-09-06 15:13:03 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-06 15:13:03 -Starting ProtocolHandler ["http-nio-9991"]
+2020-09-06 15:13:03 -Using a shared selector for servlet write/read
+2020-09-06 15:13:03 -Tomcat started on port(s): 9991 (http) with context path ''
+2020-09-06 15:13:03 -Started BootdoApplication in 16.473 seconds (JVM running for 17.662)
+2020-09-06 15:13:44 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-06 15:13:44 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-06 15:13:44 -FrameworkServlet 'dispatcherServlet': initialization completed in 158 ms
+2020-09-06 16:28:20 -Starting BootdoApplication on DESKTOP-M8PQO5R with PID 6596 (D:\AAAprivate\mapServer\target\classes started by Administrator in D:\AAAprivate\mapServer)
+2020-09-06 16:28:20 -The following profiles are active: dev
+2020-09-06 16:28:20 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31ceea0f: startup date [Sun Sep 06 16:28:20 CST 2020]; root of context hierarchy
+2020-09-06 16:28:23 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-06 16:28:24 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a758ef53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-06 16:28:25 -Tomcat initialized with port(s): 9991 (http)
+2020-09-06 16:28:25 -Initializing ProtocolHandler ["http-nio-9991"]
+2020-09-06 16:28:25 -Starting service [Tomcat]
+2020-09-06 16:28:25 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-06 16:28:25 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_161\BIN;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;D:\ZtWork\MariaDB 10.2\bin;C:\Program Files\Bandizip\;D:\ZtWork\MariaDB 10.2\bin;;D:\eclipse_64\eclipse;;.]
+2020-09-06 16:28:25 -Initializing Spring embedded WebApplicationContext
+2020-09-06 16:28:25 -Root WebApplicationContext: initialization completed in 5434 ms
+2020-09-06 16:28:26 -Servlet dispatcherServlet mapped to [/]
+2020-09-06 16:28:26 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-06 16:28:26 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-06 16:28:26 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-06 16:28:26 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-06 16:28:27 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 16:28:28 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31ceea0f: startup date [Sun Sep 06 16:28:20 CST 2020]; root of context hierarchy
+2020-09-06 16:28:28 -Mapped "{[/base/getcityinfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getCityInfo(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 16:28:28 -Mapped "{[/base/getimagecode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getImageCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 16:28:28 -Mapped "{[/base/getstatuscode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getStatusCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 16:28:28 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-06 16:28:28 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-06 16:28:28 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-06 16:28:28 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-06 16:28:28 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-06 16:28:28 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-06 16:28:28 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-06 16:28:28 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 16:28:28 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 16:28:28 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 16:28:28 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 16:28:28 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-06 16:28:28 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.ImageAddressDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 16:28:28 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 16:28:28 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-06 16:28:28 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-06 16:28:28 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 16:28:28 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 16:28:28 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-06 16:28:30 -HikariPool-1 - Starting...
+2020-09-06 16:28:30 -HikariPool-1 - Start completed.
+2020-09-06 16:28:31 -Using default implementation for ThreadExecutor
+2020-09-06 16:28:31 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-06 16:28:31 -Quartz Scheduler v.2.2.1 created.
+2020-09-06 16:28:31 -RAMJobStore initialized.
+2020-09-06 16:28:31 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-06 16:28:31 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-06 16:28:31 -Quartz scheduler version: 2.2.1
+2020-09-06 16:28:31 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@1cb13338
+2020-09-06 16:28:32 -LiveReload server is running on port 35729
+2020-09-06 16:28:32 -Registering beans for JMX exposure on startup
+2020-09-06 16:28:32 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-06 16:28:32 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-06 16:28:32 -Starting beans in phase 2147483647
+2020-09-06 16:28:32 -Starting Quartz Scheduler now
+2020-09-06 16:28:32 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-06 16:28:32 -Starting ProtocolHandler ["http-nio-9991"]
+2020-09-06 16:28:32 -Using a shared selector for servlet write/read
+2020-09-06 16:28:32 -Tomcat started on port(s): 9991 (http) with context path ''
+2020-09-06 16:28:32 -Started BootdoApplication in 13.46 seconds (JVM running for 14.89)
+2020-09-06 16:29:21 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-06 16:29:21 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-06 16:29:21 -FrameworkServlet 'dispatcherServlet': initialization completed in 199 ms
+2020-09-06 17:02:54 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31ceea0f: startup date [Sun Sep 06 16:28:20 CST 2020]; root of context hierarchy
+2020-09-06 17:02:54 -Stopping beans in phase 2147483647
+2020-09-06 17:02:54 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-06 17:02:54 -Shutting down Quartz Scheduler
+2020-09-06 17:02:54 -Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-06 17:02:54 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-06 17:02:54 -Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-06 17:02:54 -Unregistering JMX-exposed beans on shutdown
+2020-09-06 17:02:54 -Unregistering JMX-exposed beans
+2020-09-06 17:02:54 -HikariPool-1 - Shutdown initiated...
+2020-09-06 17:02:54 -HikariPool-1 - Shutdown completed.
+2020-09-06 17:02:54 -Starting BootdoApplication on DESKTOP-M8PQO5R with PID 6596 (D:\AAAprivate\mapServer\target\classes started by Administrator in D:\AAAprivate\mapServer)
+2020-09-06 17:02:54 -The following profiles are active: dev
+2020-09-06 17:02:54 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@593a2e05: startup date [Sun Sep 06 17:02:54 CST 2020]; root of context hierarchy
+2020-09-06 17:02:56 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-06 17:09:06 -Starting BootdoApplication on DESKTOP-M8PQO5R with PID 5320 (D:\AAAprivate\mapServer\target\classes started by Administrator in D:\AAAprivate\mapServer)
+2020-09-06 17:09:06 -The following profiles are active: dev
+2020-09-06 17:09:06 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1aaa2cb9: startup date [Sun Sep 06 17:09:06 CST 2020]; root of context hierarchy
+2020-09-06 17:09:09 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-06 17:09:10 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5085b17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-06 17:09:12 -Tomcat initialized with port(s): 9991 (http)
+2020-09-06 17:09:12 -Initializing ProtocolHandler ["http-nio-9991"]
+2020-09-06 17:09:12 -Starting service [Tomcat]
+2020-09-06 17:09:12 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-06 17:09:12 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_161\BIN;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;D:\ZtWork\MariaDB 10.2\bin;C:\Program Files\Bandizip\;D:\ZtWork\MariaDB 10.2\bin;;D:\eclipse_64\eclipse;;.]
+2020-09-06 17:09:12 -Initializing Spring embedded WebApplicationContext
+2020-09-06 17:09:12 -Root WebApplicationContext: initialization completed in 5791 ms
+2020-09-06 17:09:13 -Servlet dispatcherServlet mapped to [/]
+2020-09-06 17:09:13 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-06 17:09:13 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-06 17:09:13 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-06 17:09:13 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-06 17:09:14 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 17:09:15 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1aaa2cb9: startup date [Sun Sep 06 17:09:06 CST 2020]; root of context hierarchy
+2020-09-06 17:09:15 -Mapped "{[/base/getcityinfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getCityInfo(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:09:15 -Mapped "{[/base/getstatuscode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getStatusCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:09:15 -Mapped "{[/base/getimagecode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getImageCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:09:15 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-06 17:09:15 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-06 17:09:15 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-06 17:09:15 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-06 17:09:15 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-06 17:09:15 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-06 17:09:15 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-06 17:09:15 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 17:09:15 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:09:15 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 17:09:15 -Mapped "{[/sys/info/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.info(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 17:09:15 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 17:09:15 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.ImageAddressDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:09:15 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 17:09:15 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-06 17:09:15 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-06 17:09:15 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-06 17:09:15 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 17:09:15 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 17:09:15 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-06 17:09:17 -HikariPool-1 - Starting...
+2020-09-06 17:09:18 -HikariPool-1 - Start completed.
+2020-09-06 17:09:18 -Using default implementation for ThreadExecutor
+2020-09-06 17:09:18 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-06 17:09:18 -Quartz Scheduler v.2.2.1 created.
+2020-09-06 17:09:18 -RAMJobStore initialized.
+2020-09-06 17:09:18 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-06 17:09:18 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-06 17:09:18 -Quartz scheduler version: 2.2.1
+2020-09-06 17:09:18 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@20317562
+2020-09-06 17:09:19 -LiveReload server is running on port 35729
+2020-09-06 17:09:19 -Registering beans for JMX exposure on startup
+2020-09-06 17:09:19 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-06 17:09:19 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-06 17:09:20 -Starting beans in phase 2147483647
+2020-09-06 17:09:20 -Starting Quartz Scheduler now
+2020-09-06 17:09:20 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-06 17:09:20 -Starting ProtocolHandler ["http-nio-9991"]
+2020-09-06 17:09:20 -Using a shared selector for servlet write/read
+2020-09-06 17:09:20 -Tomcat started on port(s): 9991 (http) with context path ''
+2020-09-06 17:09:20 -Started BootdoApplication in 14.931 seconds (JVM running for 16.218)
+2020-09-06 17:09:28 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-06 17:09:28 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-06 17:09:28 -FrameworkServlet 'dispatcherServlet': initialization completed in 72 ms
+2020-09-06 17:40:52 -Starting BootdoApplication on DESKTOP-M8PQO5R with PID 5136 (D:\AAAprivate\mapServer\target\classes started by Administrator in D:\AAAprivate\mapServer)
+2020-09-06 17:40:52 -The following profiles are active: dev
+2020-09-06 17:40:52 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6be040fd: startup date [Sun Sep 06 17:40:52 CST 2020]; root of context hierarchy
+2020-09-06 17:40:54 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-06 17:40:56 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3491076a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-06 17:40:57 -Tomcat initialized with port(s): 9991 (http)
+2020-09-06 17:40:57 -Initializing ProtocolHandler ["http-nio-9991"]
+2020-09-06 17:40:57 -Starting service [Tomcat]
+2020-09-06 17:40:57 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-06 17:40:57 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_161\BIN;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;D:\ZtWork\MariaDB 10.2\bin;C:\Program Files\Bandizip\;D:\ZtWork\MariaDB 10.2\bin;;D:\eclipse_64\eclipse;;.]
+2020-09-06 17:40:57 -Initializing Spring embedded WebApplicationContext
+2020-09-06 17:40:57 -Root WebApplicationContext: initialization completed in 5121 ms
+2020-09-06 17:40:57 -Servlet dispatcherServlet mapped to [/]
+2020-09-06 17:40:57 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-06 17:40:57 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-06 17:40:57 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-06 17:40:57 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-06 17:40:59 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 17:41:00 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6be040fd: startup date [Sun Sep 06 17:40:52 CST 2020]; root of context hierarchy
+2020-09-06 17:41:00 -Mapped "{[/base/getcityinfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getCityInfo(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:41:00 -Mapped "{[/base/getimagecode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getImageCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:41:00 -Mapped "{[/base/getstatuscode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getStatusCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:41:00 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-06 17:41:00 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-06 17:41:00 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-06 17:41:00 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-06 17:41:00 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-06 17:41:00 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-06 17:41:00 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-06 17:41:00 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 17:41:00 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:41:00 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 17:41:00 -Mapped "{[/sys/info/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.info(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 17:41:00 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-06 17:41:00 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 17:41:00 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.ImageAddressDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:41:00 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 17:41:00 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-06 17:41:00 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-06 17:41:00 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 17:41:00 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 17:41:00 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-06 17:41:02 -HikariPool-1 - Starting...
+2020-09-06 17:41:02 -HikariPool-1 - Start completed.
+2020-09-06 17:41:02 -Using default implementation for ThreadExecutor
+2020-09-06 17:41:03 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-06 17:41:03 -Quartz Scheduler v.2.2.1 created.
+2020-09-06 17:41:03 -RAMJobStore initialized.
+2020-09-06 17:41:03 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-06 17:41:03 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-06 17:41:03 -Quartz scheduler version: 2.2.1
+2020-09-06 17:41:03 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@4d41a2f4
+2020-09-06 17:41:04 -LiveReload server is running on port 35729
+2020-09-06 17:41:04 -Registering beans for JMX exposure on startup
+2020-09-06 17:41:04 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-06 17:41:04 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-06 17:41:04 -Starting beans in phase 2147483647
+2020-09-06 17:41:04 -Starting Quartz Scheduler now
+2020-09-06 17:41:04 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-06 17:41:04 -Starting ProtocolHandler ["http-nio-9991"]
+2020-09-06 17:41:04 -Using a shared selector for servlet write/read
+2020-09-06 17:41:04 -Tomcat started on port(s): 9991 (http) with context path ''
+2020-09-06 17:41:04 -Started BootdoApplication in 13.697 seconds (JVM running for 14.761)
+2020-09-06 17:41:26 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-06 17:41:26 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-06 17:41:27 -FrameworkServlet 'dispatcherServlet': initialization completed in 83 ms
+2020-09-06 17:54:29 -D:\AAAprivate\mapServer\src\main\resources\static\upload\images
+2020-09-06 17:57:49 -D:\AAAprivate\mapServer\src\main\resources\static\upload\images
+2020-09-06 17:59:14 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6be040fd: startup date [Sun Sep 06 17:40:52 CST 2020]; root of context hierarchy
+2020-09-06 17:59:14 -Stopping beans in phase 2147483647
+2020-09-06 17:59:14 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-06 17:59:14 -Shutting down Quartz Scheduler
+2020-09-06 17:59:14 -Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-06 17:59:14 -Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-06 17:59:14 -Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-06 17:59:14 -Unregistering JMX-exposed beans on shutdown
+2020-09-06 17:59:14 -Unregistering JMX-exposed beans
+2020-09-06 17:59:14 -HikariPool-1 - Shutdown initiated...
+2020-09-06 17:59:14 -HikariPool-1 - Shutdown completed.
+2020-09-06 17:59:15 -Starting BootdoApplication on DESKTOP-M8PQO5R with PID 5136 (D:\AAAprivate\mapServer\target\classes started by Administrator in D:\AAAprivate\mapServer)
+2020-09-06 17:59:15 -The following profiles are active: dev
+2020-09-06 17:59:15 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c77a133: startup date [Sun Sep 06 17:59:15 CST 2020]; root of context hierarchy
+2020-09-06 17:59:16 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-06 17:59:16 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3491076a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-06 17:59:16 -Tomcat initialized with port(s): 9991 (http)
+2020-09-06 17:59:16 -Initializing ProtocolHandler ["http-nio-9991"]
+2020-09-06 17:59:16 -Starting service [Tomcat]
+2020-09-06 17:59:16 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-06 17:59:16 -Initializing Spring embedded WebApplicationContext
+2020-09-06 17:59:16 -Root WebApplicationContext: initialization completed in 1581 ms
+2020-09-06 17:59:16 -Servlet dispatcherServlet mapped to [/]
+2020-09-06 17:59:16 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-06 17:59:16 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-06 17:59:16 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-06 17:59:16 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-06 17:59:23 -Starting BootdoApplication on DESKTOP-M8PQO5R with PID 10100 (D:\AAAprivate\mapServer\target\classes started by Administrator in D:\AAAprivate\mapServer)
+2020-09-06 17:59:23 -The following profiles are active: dev
+2020-09-06 17:59:23 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@11237def: startup date [Sun Sep 06 17:59:23 CST 2020]; root of context hierarchy
+2020-09-06 17:59:26 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-06 17:59:27 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$61bc98c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-06 17:59:28 -Tomcat initialized with port(s): 9991 (http)
+2020-09-06 17:59:28 -Initializing ProtocolHandler ["http-nio-9991"]
+2020-09-06 17:59:28 -Starting service [Tomcat]
+2020-09-06 17:59:28 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-09-06 17:59:28 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_161\BIN;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;D:\ZtWork\MariaDB 10.2\bin;C:\Program Files\Bandizip\;D:\ZtWork\MariaDB 10.2\bin;;D:\eclipse_64\eclipse;;.]
+2020-09-06 17:59:29 -Initializing Spring embedded WebApplicationContext
+2020-09-06 17:59:29 -Root WebApplicationContext: initialization completed in 5509 ms
+2020-09-06 17:59:29 -Servlet dispatcherServlet mapped to [/]
+2020-09-06 17:59:29 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-06 17:59:29 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-06 17:59:29 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-06 17:59:29 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-06 17:59:30 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 17:59:31 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@11237def: startup date [Sun Sep 06 17:59:23 CST 2020]; root of context hierarchy
+2020-09-06 17:59:31 -Mapped "{[/base/getimagecode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getImageCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:59:31 -Mapped "{[/base/getcityinfo],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getCityInfo(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:59:31 -Mapped "{[/base/getstatuscode],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.system.controller.BaseInfoController.getStatusCode(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:59:31 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2020-09-06 17:59:31 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2020-09-06 17:59:31 -Mapped "{[/mapgoogle],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.mapGoogle(org.springframework.ui.Model)
+2020-09-06 17:59:31 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2020-09-06 17:59:31 -Mapped "{[/sys/xzyl],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.index(org.springframework.ui.Model)
+2020-09-06 17:59:31 -Mapped "{[/sys/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.add()
+2020-09-06 17:59:31 -Mapped "{[/sys/remove],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.remove(java.lang.Long)
+2020-09-06 17:59:31 -Mapped "{[/sys/update]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.update(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 17:59:31 -Mapped "{[/sys/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.XzylController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:59:31 -Mapped "{[/sys/save],methods=[POST]}" onto public com.bootdo.common.utils.ReturnType com.bootdo.system.controller.XzylController.save(com.bootdo.system.domain.ImageAddressDO,org.springframework.web.multipart.MultipartFile[])
+2020-09-06 17:59:31 -Mapped "{[/sys/info/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.info(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 17:59:31 -Mapped "{[/sys/detail/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailById(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 17:59:31 -Mapped "{[/sys/detail/address],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.detailByAddress(java.util.Map<java.lang.String, java.lang.Object>,org.springframework.ui.Model)
+2020-09-06 17:59:31 -Mapped "{[/sys/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.XzylController.edit(java.lang.Long,org.springframework.ui.Model)
+2020-09-06 17:59:31 -Mapped "{[/sys/listall],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.ImageAddressDO> com.bootdo.system.controller.XzylController.listAll(java.util.Map<java.lang.String, java.lang.Object>)
+2020-09-06 17:59:31 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-06 17:59:31 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-06 17:59:31 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 17:59:31 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-06 17:59:32 -[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-06 17:59:34 -HikariPool-1 - Starting...
+2020-09-06 17:59:34 -HikariPool-1 - Start completed.
+2020-09-06 17:59:34 -Using default implementation for ThreadExecutor
+2020-09-06 17:59:34 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-06 17:59:34 -Quartz Scheduler v.2.2.1 created.
+2020-09-06 17:59:34 -RAMJobStore initialized.
+2020-09-06 17:59:34 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-06 17:59:34 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-06 17:59:34 -Quartz scheduler version: 2.2.1
+2020-09-06 17:59:34 -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@6bc2e221
+2020-09-06 17:59:35 -LiveReload server is running on port 35729
+2020-09-06 17:59:36 -Registering beans for JMX exposure on startup
+2020-09-06 17:59:36 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-06 17:59:36 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-06 17:59:36 -Starting beans in phase 2147483647
+2020-09-06 17:59:36 -Starting Quartz Scheduler now
+2020-09-06 17:59:36 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-06 17:59:36 -Starting ProtocolHandler ["http-nio-9991"]
+2020-09-06 17:59:36 -Using a shared selector for servlet write/read
+2020-09-06 17:59:36 -Tomcat started on port(s): 9991 (http) with context path ''
+2020-09-06 17:59:36 -Started BootdoApplication in 14.123 seconds (JVM running for 15.279)
+2020-09-06 17:59:36 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-06 17:59:36 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-06 17:59:36 -FrameworkServlet 'dispatcherServlet': initialization completed in 181 ms
+2020-09-06 18:00:11 -D:\AAAprivate\mapServer\src\main\resources\static\upload\images

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro" lang="ja">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content ">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-body">
+            	<form class="form-horizontal m-t" id="searchForm" >
+            		<div class="form-group">
+                        <label class="col-sm-1 control-label" style="width: 160px;">コード：</label>
+                        <div class="col-sm-3" style="width: 160px;">
+<!-- 	                            data-bv-integer="true" data-bv-message="数字でなければならない。"  -->
+<!--                                 data-bv-stringlength="true" -->
+<!--                                 data-bv-stringlength-max="2" data-bv-stringlength-message="２数字以下で入力してください。"  -->
+								<input id="imagestatecd" name="imagestatecd" 
+					            pattern="^([1-9]\d{0,1})$"
+					            data-bv-regexp-message="２数字以下で入力してください。" 
+                                class="form-control" type="text">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" style="width: 160px;">名称：</label>
+                        <div class="col-sm-3" style="width: 320px;">
+								<input id="imagestatename" name="imagestatename" 
+                                data-bv-stringlength="true"
+                                data-bv-stringlength-max="20" data-bv-stringlength-message="２０文字以下で入力してください。" 
+                                class="form-control" type="text">
+                        </div>
+                        
+                        <div class="col-sm-2">
+                            <button type="button" class="btn btn-success" onclick="reLoad()">
+                            	<i class="fa fa-search"></i> 検索
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <hr>
+                <div class="fixed-table-toolbar">
+                    <div class="columns pull-left">
+                        <button  type="button" class="btn btn-primary" onclick="add()">
+                            <i class="fa fa-plus" aria-hidden="true"></i>新規登録
+                        </button>
+                    </div>
+                </div>
+                
+                <table id="exampleTable" data-mobile-responsive="true"></table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--shiro控制bootstraptable行内按钮看见性 来自bootdo的创新方案 -->
+<div>
+    <script type="text/javascript">
+        var s_edit_h = 'hidden';
+        var s_remove_h = 'hidden';
+        var s_resetPwd_h = 'hidden';
+    </script>
+</div>
+<div>
+    <script type="text/javascript">
+        s_edit_h = '';
+    </script>
+</div>
+<div>
+    <script type="text/javascript">
+        var s_remove_h = '';
+    </script>
+</div>
+<div>
+    <script type="text/javascript">
+        var s_resetPwd_h = '';
+    </script>
+</div>
+<div th:include="include :: footer"></div>
+<script type="text/javascript" src="/js/appjs/code/state/state.js"></script>
+
+<script type="text/javascript">
+$(function () {
+	$('#searchForm').bootstrapValidator().on('success.form.bv', function (e) { e.preventDefault(); });
+});
+</script>
+
+</body>
+</html>

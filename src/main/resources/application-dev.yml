@@ -1,0 +1,27 @@
+logging:
+  level:
+    root: info
+    com.bootdo: info
+
+spring:
+#  profiles:
+#    active: oracle
+  datasource: 
+#    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=utf8&useSSL=false
+#    url: jdbc:mysql://39.101.212.69:3306/demo?useUnicode=true&characterEncoding=utf8&useSSL=false
+#    url: jdbc:mysql://183.90.238.21:3306/hipit_map?useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://localhost:3306/kichijyojimap?useUnicode=true&characterEncoding=utf8&useSSL=false
+#    url: jdbc:mysql://mysql2304.xserver.jp/hipit_map?useUnicode=true&characterEncoding=utf8&useSSL=false
+#    username: root
+    username: mapuser
+#    password: root
+#    password: 123456
+#    password: '1qaz@WSX'
+    password: 'Mapuser@2020'
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    open-in-view: true
+    database: MYSQL
+    show-sql: true
+    #hibernate:
+      #ddl-auto: update

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>今昔マップ</title>
+    <meta name="keywords" content="xx">
+    <meta name="description" content="xx">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/css/plugins/toastr/toastr.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/style.css?v=4.1.0" rel="stylesheet">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlXHouTLI-TcTM2CGqOQH0pYIW1RNWnb8&callback=initMap"></script>
+</head>
+<!-- <body class="fixed-sidebar full-height-layout gray-bg" style="overflow: hidden"> -->
+<body style="overflow: hidden">
+
+    <p>今昔マップ</p>
+    <div id="map" style="width:100%; max-width:100%; height:100%;"></div>
+
+<!-- 全局js -->
+<script src="/js/jquery.min.js?v=2.1.4"></script>
+<script src="/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="/js/plugins/layer/layer.min.js"></script>
+<!-- 自定义js -->
+<script src="/js/app.js?v=4.1.0"></script>
+<script type="text/javascript" src="/js/contabs.js"></script>
+<!-- 第三方插件 -->
+<script src="/js/plugins/pace/pace.min.js"></script>
+<!-- vue -->
+<!-- <script type="text/javascript" src="/js/vue.min.js"> -->
+
+</script>
+<!-- Toastr script -->
+<!-- <script src="/js/plugins/toastr/toastr.min.js"></script> -->
+<script type="text/javascript">
+      var map;
+      var marker = [];
+      var infoWindow = [];
+      function initMap() {
+        loadImg();
+        var opts = {
+          zoom: 17,
+          center: new google.maps.LatLng(35.703215,139.579418)
+        };
+        map = new google.maps.Map(document.getElementById("map"), opts);
+      }
+</script>
+    
+
+<script type="text/javascript">
+	function loadImg(){
+		$.ajax({
+			url : '/sys/listall',
+			success : function(data) {
+				debugger;
+				//加载数据
+				loadDatas(data);
+			}
+		});
+	}
+	
+	 function loadDatas(data){ // 読み込んだCSVデータが文字列として渡される
+	    var result = []; // 最終的な二次元配列を入れるための配列
+	    // 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
+	    for(var i = 0; i < data.length; i++){
+            var myLatlng = new google.maps.LatLng(data[i].googlemapmarky,data[i].googlemapmarkx);
+			marker[i] = new google.maps.Marker({
+			       position: myLatlng,
+			       map: map,
+                	visible: false,
+// 			       title: '1111',
+//                    icon: {
+// 	            	 url: '/upload/images/' + data[i].image,
+// 	            	 scaledSize : new google.maps.Size(60, 40)
+// 			       }
+			});
+//           	var myLatlng = new google.maps.LatLng(result[i][3],result[i][4]);
+	        infoWindow[i] = new google.maps.InfoWindow({ // 吹き出しの追加
+			    position: myLatlng,
+			    content: "<div class='infowindow;>" +
+	                   "<a href='#' onclick = 'detail(\"" + data[i].address1 + "\", \"" + data[i].address2 + "\",\"" + data[i].address3 + "\",\"" + data[i].address4 + "\",\"" + data[i].address5 + "\");'  target='_blank'>" +
+	                   "<img src='/upload/images/"+ data[i].image +"' width='75' height='75'>" +
+	                   "</a>" + 
+	                   "</div>" // 吹き出しに表示する内容
+				});
+	        
+	        infoWindow[i].open(map);
+		        
+            //クリックしたら指定したurlに遷移するイベント
+//             var googlemapmarkx = data[i].googlemapmarkx;
+//             var googlemapmarky = data[i].googlemapmarky;
+//             var address1 = data[i].address1;
+//             var address2 = data[i].address2;
+//             var address3 = data[i].address3;
+//             var address4 = data[i].address4;
+//             var address5 = data[i].address5;
+// 	        google.maps.event.addListener(marker[i], 'click', (function(addr1, addr2,addr3,addr4,addr5){
+// 	            return function(){
+// 	            	detail(addr1, addr2,addr3,addr4,addr5);
+//             	};
+// 	        })(address1, address2,address3,address4,address5));
+	    }
+      }
+	 
+	 function detail(addr1, addr2,addr3,addr4,addr5) {
+		    layer.open({
+		        type: 2,
+		        title: '今昔マップ',
+		        maxmin: true,
+		        shadeClose: false, // 点击遮罩关闭层
+		        area: ['1130px', '754px'],
+		        content: 'sys/detail/address?address1=' + addr1 + "&address2=" + addr2 + "&address3=" + addr3 + "&address4=" + addr4 + "&address5=" + addr5
+// 		        content: 'sys/detail/address?googlemapmarky=' + yaddr + "&googlemapmarkx=" + xaddr// iframe的url
+		    });
+		}
+</script>
+</body>
+</html>
